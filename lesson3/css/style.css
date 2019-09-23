@@ -1,0 +1,24 @@
+body {
+	background-color: #f8f8f8;
+	align-items: center;
+	margin: 0;
+	font-family: Arial;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.shapka {
+	width: 333px;
+	background-color: #2d2d2d;
+}
+.whitessilki {
+	color: white;
+}
+table {
+	width: 1000px;
+}
+td, th {
+	margin: 0;
+	padding: 0;
+}
