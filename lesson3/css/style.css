@@ -19,7 +19,8 @@ a {
 }
 table {
 	width: 1000px;
-	border: 1px solid red;
+	border-spacing: 0;
+	/*border: 1px solid red;*/
 }
 td, th {
 	margin: 0;
@@ -27,6 +28,10 @@ td, th {
 }
 #inlogo {
 	background-color: #c0c0c0;
+}
+ul {
+	list-style-image: url(../img/iconul.png);
+	list-styl
 }
 li {
 	list-style-type: none;
@@ -40,6 +45,10 @@ li {
 .namemail {
 	height: 30px;
 	width: 250px;
+	font-size: 15px;
+	font-weight: 400;
+	background-color: grey;
+	text-decoration-color: red;
 }
 .buttonkon {
 	height: 30px;
@@ -59,17 +68,79 @@ li {
 	height: 597px;
 	width: 597px;
 }
+/*ZADANIE*/
 .podrob-opis {
-	width: 100;
+	width: 1000px;
 	height: 100;
 	color: white;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	text-align: center;
-	background-color: #484343;
+	background-color: black;
 }
 .podrob-opis-zag {
 	font-size: 30px;
 	font-weight: 700;
+}
+#podrob-opis-back {
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 200%;
+}
+.podrob-opis-zag-small {
+	font-size: 14px;
+	color: #484343;
+}
+#podrob-opis-back2 {
+	background-size: 100%;
+}
+.podrob-opis-zag2 {
+	color: black;
+	font-size: 30px;
+	font-weight: 700;
+}
+.podrob-opis-zag-small2 {
+	font-size: 14px;
+	color: black;
+}
+.protect {
+	align-items: center;
+	background-color: black;
+	width: 500px;
+	height: 500px;
+	color: white;
+	text-align: center;
+}
+#prodisp {
+	background-position: top;
+}
+#camera {
+	background-color: black;
+	background-size: 20%;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.tochki {
+	font-size: 10px;
+	color: grey;
+}
+.nechetline {
+	background-color: #f3f3f3;
+}
+.tovxar {
+	font-size: 18px;
+	font-weight: 450;
+	font-family: SF Pro Text, Arial;
+}
+.zagxar {
+	font-size: 22px;
+	font-weight: 600;
+}
+#textarena {
+	height: 200px;
+	width: 506px;
+	resize: none;
+	font-size: 19px;
+	font-weight: 400;
 }
