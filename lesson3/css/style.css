@@ -47,7 +47,7 @@ li {
 	width: 250px;
 	font-size: 15px;
 	font-weight: 400;
-	background-color: grey;
+	background-color: #f8f8f8;
 	text-decoration-color: red;
 }
 .buttonkon {
@@ -143,4 +143,9 @@ li {
 	resize: none;
 	font-size: 19px;
 	font-weight: 400;
+}
+.imgtov {
+	width: 80%;
+	height: 60%;
+	outline: 1px solid grey;
 }
