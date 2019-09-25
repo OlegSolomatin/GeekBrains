@@ -1,8 +1,7 @@
 body {
 	background-color: #f8f8f8;
-	align-items: center;
-	margin: 0;
-	font-family: Arial;
+	font-family: Oswald, Verdana, Arial;
+	margin: 0px;
 }
 a {
 	text-decoration: none;
@@ -15,9 +14,6 @@ a {
 .shapka a:hover {
 	color: grey;
 }
-.shapka a:active {
-	color: red;
-}
 .whitessilki {
 	color: white;
 	font-size: 20px;
@@ -26,7 +22,6 @@ a {
 table {
 	width: 1000px;
 	border-spacing: 0;
-	/*border: 1px solid red;*/
 }
 td, th {
 	margin: 0;
@@ -50,21 +45,28 @@ li {
 }
 .namemail {
 	height: 30px;
-	width: 250px;
+	width: 247px;
 	font-size: 15px;
 	font-weight: 400;
 	background-color: #f8f8f8;
-	text-decoration-color: red;
+	border-radius: 5px;
+	padding: 0px;
 }
 .buttonkon {
 	height: 30px;
 	width: 80px;
+	border-radius: 5px;
 }
 .opis {
 	color: #707070;
 	font-size: 14px;
 	font-style: italic;
 	line-height: 16px;
+}
+/* ZADANIE #8 */
+.opis:first-letter {
+	font-size: 200%;
+	color: grey;
 }
 .applelogo {
 	width: 100%;
@@ -88,6 +90,9 @@ li {
 .podrob-opis-zag {
 	font-size: 30px;
 	font-weight: 700;
+}
+.podrob-opis-zag:first-letter {
+	font-size: 150%;
 }
 #podrob-opis-back {
 	background-position: top;
@@ -149,9 +154,141 @@ li {
 	resize: none;
 	font-size: 19px;
 	font-weight: 400;
+	background-color: #f8f8f8;
+	padding: 0px;
+	border-radius: 5px
 }
 .imgtov {
 	width: 80%;
 	height: 60%;
 	outline: 1px solid grey;
+}
+.imgtov:hover {
+	outline: 0px;
+}
+.imgtov2 {
+	outline: 1px solid grey;
+}
+.imgtov2:hover {
+	outline: 0px;
+}
+/*ZADANIE #6*/
+#inmail:focus {
+	background-color: black;
+	color: yellow;
+}
+/*ZADANIE #7*/
+#textarena, #inname {
+	text-transform: capitalize;
+}
+#zagkon {
+	font-size: 24px;
+	font-weight: 500;
+	font-family: Arial;
+	margin: 0px;
+}
+#logovi {
+	background-repeat: no-repeat;
+	background-size: 15%;
+	background-color: #2d2d2d;
+}
+.page {
+	width: 1000px;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    border: 0;
+}
+.allcont {
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+    border: 0;
+}
+.menu {
+	width: 1000px;
+	height: 50px;
+	background-color: #2d2d2d;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+    border: 0;
+}
+.first-page-content {
+	width: 1000px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+}
+.menu-cont {
+	width: 333px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu-cont:hover a {
+	color: grey;
+}
+#logobg {
+	width: 500px;
+	background-color: black;
+	background-image: url(../img/logosmall.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#logobg img {
+	width: 50%;
+	height: 50%;
+	position: relative;
+}
+#welc {
+	width: 500px;
+	background-color: #f8f8f8;
+}
+.footer {
+	padding: 2em;
+	background-color: #f8f8f8;
+	border-top: 1px solid grey;
+	display: flex;
+	justify-content: center;
+}
+#welc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	overflow-x:hidden;
+}
+.forma {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.icon {
+	width: 50px;
+	height: 50px;
+}
+.icon img {
+	width: 50px;
+	height: 50px;
+}
+.kont {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 5px;
+}
+.adress, .mail, .phone {
+	width: 333px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.kont-fon {
+	font-weight: 500;
+	font-size: 15px;
 }
