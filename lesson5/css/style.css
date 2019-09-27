@@ -3,6 +3,12 @@ body {
 	font-family: Oswald, Verdana, Arial;
 	margin: 0px;
 }
+.page {
+	width: 1000px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
 a {
 	text-decoration: none;
 	color: black;
@@ -23,16 +29,26 @@ table {
 	width: 1000px;
 	border-spacing: 0;
 }
-td, th {
-	margin: 0;
-	padding: 0;
+tr {
+	width: 100%;
+	height: 50px;
+}
+tr:nth-child(2n) {
+	background-color: #f3f3f3;
+}
+td:nth-child(2n) {
+	width: 20%;
+	text-align: center;
+}
+#fsttd {
+	text-align: center;
 }
 #inlogo {
 	background-color: #c0c0c0;
 }
 ul {
+	font-size: 12px;
 	list-style-image: url(../img/iconul.png);
-	list-styl
 }
 li {
 	list-style-type: none;
@@ -62,90 +78,20 @@ li {
 	font-style: italic;
 	line-height: 16px;
 }
-/* ZADANIE #8 */
 .opis:first-letter {
 	font-size: 200%;
 	color: grey;
 }
-.applelogo {
-	width: 100%;
-	height: 85px;
-}
-.podrob-opis-image {
-	height: 597px;
-	width: 597px;
-}
-/*ZADANIE*/
-.podrob-opis {
-	width: 1000px;
-	height: 100;
-	color: white;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 24px;
-	text-align: center;
-	background-color: black;
-}
-.podrob-opis-zag {
-	font-size: 30px;
-	font-weight: 700;
-}
-.podrob-opis-zag:first-letter {
-	font-size: 150%;
-}
-#podrob-opis-back {
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: 200%;
-}
-.podrob-opis-zag-small {
-	font-size: 14px;
-	color: #484343;
-}
-#podrob-opis-back2 {
-	background-size: 100%;
-}
-.podrob-opis-zag2 {
-	color: black;
-	font-size: 30px;
-	font-weight: 700;
-}
-.podrob-opis-zag-small2 {
-	font-size: 14px;
-	color: black;
-}
-.protect {
-	align-items: center;
-	background-color: black;
-	width: 500px;
-	height: 500px;
-	color: white;
-	text-align: center;
-}
-#prodisp {
-	background-position: top;
-}
-#camera {
-	background-color: black;
-	background-size: 20%;
-	background-position: right;
-	background-repeat: no-repeat;
-}
-.tochki {
-	font-size: 10px;
-	color: grey;
-}
-.nechetline {
-	background-color: #f3f3f3;
-}
 .tovxar {
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 450;
 	font-family: SF Pro Text, Arial;
 }
 .zagxar {
-	font-size: 22px;
-	font-weight: 600;
+	background-color: #f8f8f8;
+	font-size: 20px;
+	font-weight: 550;
+	text-align: center;
 }
 #textarena {
 	height: 200px;
@@ -157,26 +103,10 @@ li {
 	padding: 0px;
 	border-radius: 5px
 }
-.imgtov {
-	width: 50%;
-	height: 30%;
-	outline: 1px solid grey;
-}
-.imgtov:hover {
-	outline: 0px;
-}
-.imgtov2 {
-	outline: 1px solid grey;
-}
-.imgtov2:hover {
-	outline: 0px;
-}
-/*ZADANIE #6*/
 #inmail:focus {
 	background-color: black;
 	color: yellow;
 }
-/*ZADANIE #7*/
 #textarena, #inname {
 	text-transform: capitalize;
 }
@@ -190,12 +120,6 @@ li {
 	background-repeat: no-repeat;
 	background-size: 15%;
 	background-color: #2d2d2d;
-}
-.page {
-	width: 1000px;
-    height: 100%;
-    margin: auto;
-    overflow: hidden;
 }
 .allcont {
 	width: 1000px;
@@ -362,6 +286,10 @@ li {
 	background-repeat: no-repeat;
 	background-size: 90%;
 }
+/*UBRAL OUTLINE IZ 4 UROKA*/
+/*#tov-pic-iphone11-pro:hover {
+	outline: 1px solid black;
+}*/
 .tov-opis {
 	width: 30%;
 	height: 100%;
@@ -387,4 +315,119 @@ li {
 .opis {
 	width: 100%;
 	height: 70%;
+}
+.applelogo {
+	width: 1000px;
+	height: 70px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/insider.png);
+	background-color: black;
+}
+.podrob-opis-bloc1 {
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+.podrob-opis-bloc2 {
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	background-size: 20%;
+	background-repeat: no-repeat;
+	background-image: url(../img/camera.jpg);
+	background-position: top right;
+}
+.podrob-opis-bloc3 {
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/a13bionic.jpg);
+}
+.podrob-opis-image {
+	height: 597px;
+	width: 597px;
+}
+.podrob-opis {
+	width: 1000px;
+	height: 100%;
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+}
+.podrob-opis p {
+	padding: 5px;
+}
+#podrob-opis-cam p {
+	padding-left: 20px;
+	padding-right: 200px;
+}
+.podrob-opis-zag {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 700;
+}
+.podrob-opis-zag:first-letter {
+	font-size: 150%;
+}
+.podrob-opis-zag p {
+	color: white;
+	padding: 10px;
+}
+#podrob-opis-zag-cam p {
+	padding-right: 200px;
+}
+#podrob-opis-back {
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 200%;
+}
+.podrob-opis-zag-small {
+	font-size: 14px;
+	color: #484343;
+}
+#podrob-opis-back2 {
+	background-size: 100%;
+}
+.podrob-opis-zag2 {
+	color: black;
+	font-size: 30px;
+	font-weight: 700;
+}
+.podrob-opis-zag-small2 {
+	font-size: 14px;
+	color: black;
+}
+.protect {
+	align-items: center;
+	background-color: black;
+	width: 500px;
+	height: 500px;
+	color: white;
+	text-align: center;
+}
+#prodisp {
+	background-position: top;
+}
+#camera {
+	background-color: black;
+	background-size: 20%;
+	background-position: right;
+	background-repeat: no-repeat;
 }
