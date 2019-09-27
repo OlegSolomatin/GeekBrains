@@ -286,6 +286,18 @@ li {
 	background-repeat: no-repeat;
 	background-size: 90%;
 }
+#tov-pic-imac {
+	background-image: url(../img/imac-27.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+}
+#tov-pic-macpro {
+	background-image: url(../img/macpro.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+}
 /*UBRAL OUTLINE IZ 4 UROKA*/
 /*#tov-pic-iphone11-pro:hover {
 	outline: 1px solid black;
