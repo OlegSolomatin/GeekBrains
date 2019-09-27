@@ -351,9 +351,111 @@ li {
 	background-color: black;
 	width: 100%;
 	height: 100%;
-	background-size: 100%;
+	background-size: 150%;
 	background-repeat: no-repeat;
 	background-image: url(../img/a13bionic.jpg);
+	background-position: center;
+}
+.podrob-opis-bloc4 {
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(../img/iphonewater.jpg);
+	background-position: top;
+}
+.podrob-opis-splash {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	margin-top: 35%;
+}
+.podrobno-opis-splash1 {
+	width: 100%;
+	height: 100%;
+	padding: 5%;
+}
+.podrobno-opis-splash2 {
+	width: 100%;
+	height: 100%;
+	padding: 5%;
+}
+.podrobno-opis-splash3 {
+	width: 100%;
+	height: 100%;
+	padding: 5%;
+}
+.protect-block {
+	width: 100%;
+	height: 100%;
+	background-color: grey;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.protect-block1 {
+	margin: 10px;
+	width: 50%;
+	height: 478px;
+	display: block;
+	background-color: black;
+}
+.protect-block2 {
+	margin: 10px;
+	width: 50%;
+	height: 478px;
+	display: block;
+	background-color: black;
+}
+.protect-block-logo1 {
+	width: 100%;
+	height: 100px;
+	background-size: 15%;
+	background-repeat: no-repeat;
+	background-image: url(../img/icon_face.jpg);
+	background-position: left;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+.protect-block-opis1 {
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 15%;
+	margin-bottom: 20%;
+}
+.protect-block-logo2 {
+	width: 100%;
+	height: 100px;
+	background-size: 15%;
+	background-image: url(../img/icon_protect.jpg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-position: left;
+	margin-left: 10%;
+	margin-top: 10%;
+}
+.protect-block-opis2 {
+	color: white;
+	font-size: 16px;
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 15%;
+	margin-bottom: 20%;
+}
+.protect-block-opis1 p, .protect-block-opis2 p {
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 700;
 }
 .podrob-opis-image {
 	height: 597px;
@@ -369,7 +471,8 @@ li {
 	text-align: center;
 }
 .podrob-opis p {
-	padding: 5px;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 #podrob-opis-cam p {
 	padding-left: 20px;
@@ -388,7 +491,7 @@ li {
 }
 .podrob-opis-zag p {
 	color: white;
-	padding: 10px;
+	padding: 5px;
 }
 #podrob-opis-zag-cam p {
 	padding-right: 200px;
@@ -401,7 +504,11 @@ li {
 .podrob-opis-zag-small {
 	font-size: 14px;
 	color: #484343;
+	text-transform: lowercase;
 }
+/*.podrob-opis-zag:nth-child(2n) p {
+	color: #484343;
+}*/
 #podrob-opis-back2 {
 	background-size: 100%;
 }
