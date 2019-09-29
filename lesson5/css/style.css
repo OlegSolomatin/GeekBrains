@@ -73,14 +73,36 @@ li {
 	border-radius: 5px;
 }
 .opis {
+	width: 100%;
+	height: 76%;
 	color: #707070;
 	font-size: 10px;
 	font-style: italic;
 	line-height: 16px;
+	display: block;
 }
 .opis:first-letter {
 	font-size: 200%;
 	color: grey;
+}
+.butbay {
+	padding: 2em;
+}
+.butbay button {
+	width: 100%;
+	height: 35px;
+	background-color: #87CEEB;
+	border-color: #87CEFA;
+	color: white;
+	letter-spacing: -.022em;
+	font-size: 17px;
+	border-radius: 4px;
+	padding-bottom: 4px;
+	padding-top: 4px;
+}
+.butbay:hover button {
+	border: 4px;
+	background-color: #00BFFF;
 }
 .tovxar {
 	font-size: 16px;
@@ -115,6 +137,7 @@ li {
 	font-weight: 500;
 	font-family: Arial;
 	margin: 0px;
+	margin-bottom: 10px;
 }
 #logovi {
 	background-repeat: no-repeat;
@@ -167,18 +190,25 @@ li {
 	height: 50%;
 	position: relative;
 }
-#welc {
-	width: 500px;
+/* ZADANIE */
+.footer {
+	height: 100px;
 	background-color: #f8f8f8;
+	border-top: 1px solid grey;
+	padding-left: 55%;
+	padding-top: 2%;
 }
+/* Личный
 .footer {
 	padding: 2em;
 	background-color: #f8f8f8;
 	border-top: 1px solid grey;
 	display: flex;
 	justify-content: center;
-}
+}*/
 #welc {
+	width: 500px;
+	background-color: #f8f8f8;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -190,6 +220,7 @@ li {
 	margin: 5px;
 }
 .forma {
+	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -323,10 +354,6 @@ li {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%)
-}
-.opis {
-	width: 100%;
-	height: 70%;
 }
 .applelogo {
 	width: 1000px;
