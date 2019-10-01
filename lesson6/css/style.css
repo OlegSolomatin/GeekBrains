@@ -11,8 +11,8 @@
 	height: 100%;
 	background-image: url(../img/bghead.png);
 	background-repeat: no-repeat;
-	background-size: 150%;
-	background-position: center;
+	background-size: cover;
+	background-position: center center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -110,7 +110,7 @@ line-height: 22.36px;
 /* Text style for "info@examp" */
 letter-spacing: 0.36px;
 }
-.search {
+.sear {
 	color: white;
 	display: flex;
    	vertical-align: top;
@@ -123,7 +123,7 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 vertical-align: top;
-border-bottom: 2px solid black;
+border-bottom: 2px solid white;
 
 }
 .menu div {
@@ -147,6 +147,7 @@ border-bottom: 2px solid black;
 .home:hover p, .about:hover p, .service:hover p, .gallery:hover p, .news:hover p, .team:hover p, .contact:hover p {
 	border-bottom: 2px solid white;
 	color: white;
+	transform: scale(1.1);
 }
 .blocsoc {
 	margin-top: 7%;
@@ -172,7 +173,7 @@ border-bottom: 2px solid black;
 	line-height: 48px;
 	/* Text style for "N, unc ege" */
 	letter-spacing: 0.18px;
-	margin-bottom: 5%;
+	margin-bottom: 1%;
 }
 .gw {
 	display: flex;
@@ -190,6 +191,17 @@ border-bottom: 2px solid black;
 	letter-spacing: 0.6px;
 	margin-bottom: 5%;
 }
+.line {
+	margin-bottom: 4%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10%;
+	height: 0;
+	border-bottom: 2px solid white;
+	margin-left: 45%;
+	margin-right: 45%;
+}
 .gw p {
 	display: flex;
    	vertical-align: top;
@@ -206,6 +218,84 @@ border-bottom: 2px solid black;
 	margin-left: 0.5%;
 	margin-right: 0.5%;
 }
-.vk {
-
+.vk:hover img, .fc:hover img, .tw:hover img, .rss:hover img {
+	background-color: black;
+	border-radius: 20px;
+	transform: scale(1.1);
+}
+.vk:active img, .fc:active img, .tw:active img, .rss:active img {
+	background-color: red;
+}
+.search {
+	width: 208px;
+	height: 38px;
+	/*background: rgba(0,0,0,0);*/
+	border: 1px solid white;
+}
+.search input {
+	width: 150px;
+	height: 100%;
+	float: left;
+	border: 0;
+	background: transparent;
+	color: white;
+}
+.search input::placeholder {
+	color: white;
+	font-size: 16px;
+	padding-left: 10%;
+}
+.search input:focus {
+	outline: 0;
+	box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
+}
+.search button {
+	position: relative;
+	float: right;
+	border: 0;
+	padding: 0 17px 0 13px;
+	cursor: pointer;
+	height: 100%;
+	width: 58px;
+	background: transparent;
+	border-left: 1px solid white;
+}   
+.search button:hover img {
+	transform: scale(1.2);
+}
+.search button:active {
+	box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
+}
+.search button:focus {
+	outline: 0;
+}
+.aboutus {
+	width: 100%;
+	height: 100%;
+	background-color: white;
+}
+.aboutuscon {
+	margin-top: 6%;
+	margin-bottom: 6%;
+	display: flex;
+	justify-content: center;
+}
+.textab {
+	width: 540px;
+	height: 338px;
+}
+.textab p {
+color: #999999;
+font-family: "Roboto Condensed";
+font-size: 12px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: 0.12px;
+}
+.imgabout {
+	width: 540px;
+	height: 338px;
+	background-image: url(../img/imgab.png);
+	background-size: auto auto;
+	background-repeat: no-repeat;
 }
