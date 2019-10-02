@@ -1,10 +1,8 @@
-.allpage {
-	width: 100%;
-	height: 100%;
-}
 .pagecont {
 	width: 100%;
 	height: 100%;
+	display: inline-block;
+	vertical-align: top;
 }
 .header {
 	width: 100%;
@@ -74,8 +72,11 @@ letter-spacing: 26.41px;
 	justify-content: center;
 	align-items: center;
 }
-.phone div, .mail div {
+.phone div {
 	padding: 2%;
+}
+.mail div {
+	padding: 1%;
 }
 .number {
 	/* Style for "+123 456 7" */
@@ -274,11 +275,17 @@ border-bottom: 2px solid white;
 	height: 100%;
 	background-color: white;
 }
-.aboutuscon {
+.container {
 	margin-top: 6%;
 	margin-bottom: 6%;
 	display: flex;
 	justify-content: center;
+}
+.cont {
+	margin-bottom: 6%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 .textab {
 	width: 540px;
@@ -318,4 +325,128 @@ margin-bottom: 3%;
 margin-top: 2%;
 margin-left: 15%;
 	margin-right: 9%;
+}
+.serv {
+	width: 100%;
+	height: 100%;
+	background-color: #f7f7f7;
+}
+.servlogo {
+	/* Style for "Services" */
+	margin-top: 5%;
+display: inline-block;
+   vertical-align: top;
+color: #000000;
+font-family: Poppins;
+font-size: 36px;
+font-weight: 500;
+line-height: 48px;
+}
+.blocline {
+	width: 1000px;
+	display: flex;
+	flex-direction: row;
+	vertical-align: top;
+	margin-top: 4.5%;
+}
+.leftbloc {
+	width: 50%;
+	margin-right: 5.1%;
+	display: flex;
+	flex-direction: row;
+}
+.rightbloc {
+	width: 50%;
+	margin-left: 5.1%;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.serv_desc {
+	margin-right: 14%;
+}
+.desc_serv {
+	margin-left: 14%;
+}
+.serv_desc h3, .desc_serv h3 {
+/* Style for "Voluptatib" */
+width: 282px;
+height: 18px;
+color: #000000;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+/* Text style for "Voluptatib" */
+letter-spacing: 0.16px;
+padding-top: 2%;
+}
+.serv_desc p, .desc_serv p {
+	/* Style for "Itaque ear" */
+width: 282px;
+height: 56px;
+color: #999999;
+font-family: "Roboto Condensed";
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+/* Text style for "Itaque ear" */
+letter-spacing: 0.12px;
+padding-top: 5.5%;
+padding-bottom: 2.5%;
+}
+.serv_desc h3, .serv_desc p {
+	text-align: right;
+}
+.desc_serv h3, .desc_serv p {
+	text-align: left;
+}
+.logoserv {
+	width: 102px;
+	height: 102px;
+	background-color: #e1e1e1;
+	border-radius: 50%;
+	border: 1px solid #acacac;
+	vertical-align: middle;
+    line-height: 102px;
+    text-align: center
+}
+.logoserv img {
+	    display: inline-block;
+    vertical-align: middle;
+}
+.blfst:hover h3 {
+	color: #f44336;
+}
+.blfst:hover .hovst {
+	background-color: #f44336;
+}
+.blsec:hover h3 {
+	color: #f44336;
+}
+.blsec:hover .hovse {
+	background-color: #f44336;
+}
+.bltrw:hover h3 {
+	color: #f44336;
+}
+.bltrw:hover .hovtrw {
+	background-color: #f44336;
+}
+.blfor:hover h3 {
+	color: #f44336;
+}
+.blfor:hover .hovfor {
+	background-color: #f44336;
+}
+.blfiv:hover h3 {
+	color: #f44336;
+}
+.blfiv:hover .hovfiv {
+	background-color: #f44336;
+}
+.blsx:hover h3 {
+	color: #f44336;
+}
+.blsx:hover .hovsx {
+	background-color: #f44336;
 }
