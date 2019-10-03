@@ -636,7 +636,7 @@
 }
 .team_social h3 {
 	color: #f44336;
-	font-family: Poppins;
+	font-family: 'Poppins', sans-serif;
 	font-size: 25px;
 	font-weight: 600;
 	line-height: 30px;
@@ -644,7 +644,7 @@
 }
 .team_social p {
 	color: #838383;
-	font-family: "Roboto Condensed";
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 25px;
@@ -724,10 +724,16 @@
 	flex-direction: row;
 	justify-content: space-around;
 	width: 1170px;
+	height: 100%;
+	margin-top: 5%;
+	margin-bottom: 7%;
 }
 .addres {
 	width: 400px;
-	height: 300px;
+	height: 250px;
+	margin-left: 6%;
+	margin-top: 2%;
+	margin-right: 5%;
 }
 .addres p {
 	/* Style for "Lorem ipsu" */
@@ -741,7 +747,15 @@
     line-height: 1.21;
     letter-spacing: normal;
     text-align: left;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+}
+.addres h3 {
+	/* Style for "Get in tou" */
+	color: #f44336;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 26px;
+	font-weight: 400;
+	margin-bottom: 3%;
 }
 #email {
 	/* Text style for "mail@examp" */
@@ -749,5 +763,56 @@
 }
 .form {
 	width: 470px;
-	height: 353px;
+	height: 400px;
+	margin-right: 6%;
+	margin-left: 5%;
+}
+.form input {
+	width: 470px;
+	height: 42px;
+	margin-bottom: 5%;
+}
+.form input::placeholder {
+	/* Style for "Name" */
+	color: #838383;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	padding: 3.5%;
+}
+.form textarea {
+	width: 470px;
+	height: 168px;
+	margin-bottom: 5%;
+}
+.form textarea::placeholder {
+	/* Style for "Massege" */
+	color: #838383;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 3.5%;
+}
+.form button {
+	/* Style for "Rectangle" */
+	width: 140px;
+	height: 40px;
+	background-color: #f44336;
+	border: 0;
+}
+.logo_map {
+	/* Style for "Route Map" */
+	color: #f44336;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 2%;
+}
+footer {
+	width: 100%;
+	height: 71px;
+	background-color: #000000;
+	color: white;
+	text-align: center;
 }
