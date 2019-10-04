@@ -1,13 +1,14 @@
 body {
-	background-color: #f8f8f8;
+	background-color: #fff;
 	font-family: Oswald, Verdana, Arial;
 	margin: 0px;
 }
 .page {
-	width: 1000px;
+	width: 100%;
     height: 100%;
     margin: auto;
     overflow: hidden;
+    background-color: #fff;
 }
 a {
 	text-decoration: none;
@@ -84,7 +85,7 @@ li {
 	color: grey;
 }
 .butbay {
-	padding: 2em;
+	margin: 2em;
 }
 .butbay button {
 	width: 100%;
@@ -202,6 +203,9 @@ li {
 	border-top: 1px solid grey;
 	padding-left: 55%;
 	padding-top: 2%;
+	color: white;
+}
+.footer a {
 	color: white;
 }
 /* Личный
