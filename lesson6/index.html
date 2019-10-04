@@ -9,8 +9,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
+	<div class="up">
+		<a href="#up">
+			<img src="img/arrow_up.png">
+		</a>
+	</div>
 	<div class="pagecont">
-		<div class="header">
+		<div class="header" id="up">
+			<a name="head"></a>
 				<div class="menkon">
 					<div class="kon">
 						<div class="hsg">
@@ -28,13 +34,13 @@
 						<div class="sear"><form class="search"><input type="search" placeholder="Search"><button type="submit" class="coltext"><img src="img/search.png"></button></form></div>
 					</div>
 					<div class="menu">
-						<div class="home"><p>Home</p></div>
-						<div class="about"><p>About</p></div>
-						<div class="service"><p>Service</p></div>
-						<div class="gallery"><p>Gallery</p></div>
-						<div class="news"><p>News</p></div>
-						<div class="team"><p>Team</p></div>
-						<div class="contact"><p>Contact&nbsp;US</p></div>
+						<div class="home"><a href="#full"><p>Home</p></a></div>
+						<div class="about"><a href="#about"><p>About</p></a></div>
+						<div class="service"><a href="#service"><p>Service</p></a></div>
+						<div class="gallery"><a href="#gallery"><p>Gallery</p></a></div>
+						<div class="news"><a href="#news"><p>News</p></a></div>
+						<div class="team"><a href="#team"><p>Team</p></a></div>
+						<div class="contact"><a href="#contact"><p>Contact&nbsp;US</p></a></div>
 					</div>
 				</div>
 				<div class="blocsoc">
@@ -50,6 +56,7 @@
 				</div>
 		</div>
 		<div class="aboutus">
+			<a name="about"></a>
 				<div class="container">
 					<div class="textab">
 						<div class="logoab"><p>About Us!</p></div>
@@ -61,6 +68,7 @@
 				</div>
 		</div>
 		<div class="serv">
+			<a name="service"></a>
 			<div class="cont">
 				<div class="ourlogo"><h3>Services</h3></div>
 				<div class="blocline">
@@ -126,6 +134,7 @@
 			</div>
 		</div>
 		<div class="ourgallery">
+			<a name="gallery"></a>
 			<div class="ourblock">
 				<div class="ourlogo"><h3>Our Gallery</h3></div>
 				<div class="ourgame">
@@ -166,7 +175,57 @@
 				<div class="bloc_cop"><p id="seo">JOHN SMITH</p><p>&nbsp;- FOUNDER</p></div>
 			</div>
 		</div>
+		<div class="newsevents">
+			<a name="news"></a>
+			<div class="news_container">
+				<div class="ourlogo"><h3>News & Events</h3></div>
+				<div class="newsevents_cont">
+					<div class="newsblock">
+						<div class="logonew"><h4>Latest News</h4></div>
+						<div class="newsline">
+							<div class="news_cal">
+								<h3>15</h3>
+								<p>June</p>
+								<p>2016</p>
+							</div>
+							<div class="news_text"><h4>Fugiat Quo Voluptas</h4>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.</p></div>
+						</div>
+						<div class="newsline">
+							<div class="news_cal">
+								<h3>18</h3>
+								<p>June</p>
+								<p>2016</p>
+							</div>
+							<div class="news_text"><h4>Fugiat Quo Voluptas</h4>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.</p></div>
+						</div>
+						<div class="newsline">
+							<div class="news_cal">
+								<h3>20</h3>
+								<p>June</p>
+								<p>2016</p>
+							</div>
+							<div class="news_text"><h4>Fugiat Quo Voluptas</h4>
+							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse.</p></div>
+						</div>
+					</div>
+					<div class="eventsblock">
+						<div class="logoeven"><h4>Featured Events</h4></div>
+						<div class="cont_img_eve">
+							<div class="lineimgeve"><img src="img/g7.png"></div>
+							<div class="lineimgeve"><img src="img/g9.png" style="border-right: 1px solid white; border-left: 1px solid white"></div>
+							<div class="lineimgeve"><img src="img/g8.png"></div>
+						</div>
+						<div class="events_list">
+							
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
 		<div class="ourteam">
+			<a name="team"></a>
 			<div class="ourteam_cont">
 				<div class="ourlogo"><h3>Our Team</h3></div>
 				<div class="team_cont">
@@ -234,8 +293,9 @@
 			</div>
 		</div>
 		<div class="contacusbl">
+			<a name="contact"></a>
 			<div class="contactus_cont">
-				<div class="ourlogo">Contact US</div>
+				<div class="ourlogo"><h3>Contact US</h3></div>
 				<div class="addr_form">
 					<div class="addres">
 						<h3>Get in touch with us</h3>
@@ -252,7 +312,7 @@
 						<form>
 							<input type="text" name="yourname" placeholder="Name" class="namemail" id="inname">
 							<input type="text" name="mail" placeholder="Email" class="namemail" id="inmail"><br>
-							<textarea placeholder="Message" id="textarena"></textarea>
+							<textarea placeholder="Message" id="textarena" name="comment"></textarea>
 						</form>
 						<button>Submit</button>
 					</div>
@@ -264,6 +324,6 @@
 			</div>
 		</div>
 	</div>
-	<footer><p>&copy;&nbsp;2017 Историческе Игры. Все права защищены</p></footer>		
+	<footer class="foot"><p>&copy;&nbsp;2019 Исторические Игры. Все права защищены</p></footer>		
 </body>
 </html>
