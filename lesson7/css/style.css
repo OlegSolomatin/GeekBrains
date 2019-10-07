@@ -1314,6 +1314,11 @@ vertical-align: middle;
 	max-width:100%;
 	height:auto;
 }
+.map {
+	width: 100%;
+	max-width: 1170px;
+	height: 100%;
+}
 @media screen and (min-width: 1170px) {
 	.sell_container {
 		width: 100%;
