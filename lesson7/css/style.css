@@ -1306,18 +1306,52 @@ vertical-align: middle;
 }
 .sale_bloc {
 	width: 50%;
-	height: 100%;
-	display: inline-block;
-	overflow: hidden;
-}
-.sale_bloc img {
-	max-width:100%;
-	height:auto;
+	height: 562px;
+	display: flex;
+	/*display: inline-block;*/
+	/*overflow: hidden;*/
+	flex-direction: column;
+	justify-content: center;
 }
 .map {
 	width: 100%;
 	max-width: 1170px;
 	height: 100%;
+}
+.sale_button {
+	width: 170px;
+	height: 40px;
+	background-color: #f44336;
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 30px;
+	letter-spacing: 0.14px;
+	text-align: center;
+	color: #ffffff;
+	border: 0;
+}
+.sale_logo {
+	font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #f44336;
+}
+.sale_price {
+	color: #8c8c8c;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	/* Text style for "$, 14.44" */
+	color: #000000;
+	font-size: 62px;
+	/* Text style for "$28.90" */
+	/*text-decoration: line-through;font-size: 36px;*/
 }
 @media screen and (min-width: 1170px) {
 	.sell_container {
@@ -1360,7 +1394,7 @@ vertical-align: middle;
 		align-items: center;
 		width: 100%;
 		max-width: 955px;
-		height: 100%;
+		height: 450px;
 		display: flex;
 		justify-content: center;
 	}
@@ -1408,7 +1442,7 @@ vertical-align: middle;
 		align-items: center;
 		width: 100%;
 		max-width: 955px;
-		height: 100%;
+		height: 450px;
 		display: flex;
 		justify-content: center;
 	}
@@ -1466,7 +1500,7 @@ vertical-align: middle;
 		align-items: center;
 		width: 100%;
 		max-width: 955px;
-		height: 100%;
+		height: 400px;
 		display: flex;
 		justify-content: center;
 	}
@@ -1488,6 +1522,15 @@ vertical-align: middle;
 	    height: 100%;
 	    margin-top: 5%;
 	    margin-bottom: 7%;
+	}
+	.sale_logo {
+		font-family: 'Poppins', sans-serif;
+	    font-size: 30px;
+	    font-weight: 600;
+	    font-style: normal;
+	    font-stretch: normal;
+	    letter-spacing: normal;
+	    color: #f44336;
 	}
 }
 
@@ -1530,7 +1573,7 @@ vertical-align: middle;
 		align-items: center;
 		width: 100%;
 		max-width: 955px;
-		height: 100%;
+		height: 350px;
 		display: flex;
 		justify-content: center;
 	}
@@ -1553,10 +1596,19 @@ vertical-align: middle;
 	    margin-top: 5%;
 	    margin-bottom: 7%;
 	}
+	.sale_logo {
+		font-family: 'Poppins', sans-serif;
+	    font-size: 28px;
+	    font-weight: 600;
+	    font-style: normal;
+	    font-stretch: normal;
+	    letter-spacing: normal;
+	    color: #f44336;
+	}
 }
 
 /* Landscape phones and smaller */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 425px) and (max-width: 480px) {
 	.sell_container {
 		width: 100%;
 		height: 100%;
@@ -1585,7 +1637,7 @@ vertical-align: middle;
 		align-items: center;
 		width: 100%;
 		max-width: 955px;
-		height: 100%;
+		height: 300px;
 		display: flex;
 		justify-content: center;
 	}
@@ -1601,5 +1653,14 @@ vertical-align: middle;
 	}
 	.form {
 	    display: none;
+	}
+	.sale_logo {
+		font-family: 'Poppins', sans-serif;
+	    font-size: 25px;
+	    font-weight: 600;
+	    font-style: normal;
+	    font-stretch: normal;
+	    letter-spacing: normal;
+	    color: #f44336;
 	}
 }
