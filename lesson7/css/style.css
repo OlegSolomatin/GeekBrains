@@ -1359,6 +1359,25 @@ vertical-align: middle;
 		display: flex;
 		justify-content: center;
 	}
+	.contactus_cont {
+	    display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	    margin-top: 4%;
+	    margin-bottom: 4%;
+	    width: 100%;
+	    max-width: 1170px;
+	}
+	.addr_form {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    height: 100%;
+	    margin-top: 5%;
+	    margin-bottom: 7%;
+	}
 }
 
 /* Portrait tablets and small desktops */
@@ -1387,6 +1406,25 @@ vertical-align: middle;
 		height: 100%;
 		display: flex;
 		justify-content: center;
+	}
+	.contactus_cont {
+	    display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	    margin-top: 4%;
+	    margin-bottom: 4%;
+	    width: 100%;
+	    max-width: 1170px;
+	}
+	.addr_form {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    height: 100%;
+	    margin-top: 5%;
+	    margin-bottom: 7%;
 	}
 }
 
@@ -1426,6 +1464,25 @@ vertical-align: middle;
 		height: 100%;
 		display: flex;
 		justify-content: center;
+	}
+	.contactus_cont {
+	    display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	    margin-top: 4%;
+	    margin-bottom: 4%;
+	    width: 100%;
+	    max-width: 1170px;
+	}
+	.addr_form {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    height: 100%;
+	    margin-top: 5%;
+	    margin-bottom: 7%;
 	}
 }
 
@@ -1472,6 +1529,25 @@ vertical-align: middle;
 		display: flex;
 		justify-content: center;
 	}
+	.contactus_cont {
+	    display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	    margin-top: 4%;
+	    margin-bottom: 4%;
+	    width: 100%;
+	    max-width: 1170px;
+	}
+	.addr_form {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    height: 100%;
+	    margin-top: 5%;
+	    margin-bottom: 7%;
+	}
 }
 
 /* Landscape phones and smaller */
@@ -1507,5 +1583,18 @@ vertical-align: middle;
 		height: 100%;
 		display: flex;
 		justify-content: center;
+	}
+	.contactus_cont {
+	    display: flex;
+	    justify-content: center;
+	    flex-direction: column;
+	    align-items: center;
+	    margin-top: 4%;
+	    margin-bottom: 4%;
+	    width: 100%;
+	    max-width: 1170px;
+	}
+	.form {
+	    display: none;
 	}
 }
