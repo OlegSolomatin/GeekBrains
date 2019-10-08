@@ -1306,12 +1306,16 @@ vertical-align: middle;
 }
 .sale_bloc {
 	width: 50%;
-	height: 562px;
+	height: 100%;
 	display: flex;
 	/*display: inline-block;*/
 	/*overflow: hidden;*/
 	flex-direction: column;
 	justify-content: center;
+	max-height: 563px;
+	padding-left: 3%;
+	padding-bottom: 5%;
+	padding-top: 5%;
 }
 .map {
 	width: 100%;
@@ -1333,6 +1337,10 @@ vertical-align: middle;
 	color: #ffffff;
 	border: 0;
 }
+.sale_button:hover {
+	background-color: grey;
+	transform: scale(1.1);
+}
 .sale_logo {
 	font-family: 'Poppins', sans-serif;
     font-size: 36px;
@@ -1342,17 +1350,35 @@ vertical-align: middle;
     line-height: 1.33;
     letter-spacing: normal;
     color: #f44336;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 .sale_price {
-	color: #8c8c8c;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 300;
-	/* Text style for "$, 14.44" */
 	color: #000000;
 	font-size: 62px;
-	/* Text style for "$28.90" */
-	/*text-decoration: line-through;font-size: 36px;*/
 }
+.sale_price span {
+	font-size: 36px;
+    font-weight: 300;
+    line-height: 48px;
+    text-align: left;
+    color: #8c8c8c;
+}
+.sale_dis h6 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #010101;
+    text-transform: uppercase;
+ }
+ .form_cont_bloc {
+ 	background-color: #f7f7f7;
+ }
 @media screen and (min-width: 1170px) {
 	.sell_container {
 		width: 100%;
@@ -1369,7 +1395,6 @@ vertical-align: middle;
 		justify-content: space-around;
 	}
 }
-
 /* Portrait tablets and medium desktops */
 @media  screen and (min-width: 992px) and (max-width: 1169px) {
 	.sell_container {
@@ -1391,12 +1416,8 @@ vertical-align: middle;
 		background-color: #f7f7f7;
 	}
 	.sale_bloc {
-		align-items: center;
 		width: 100%;
 		max-width: 955px;
-		height: 450px;
-		display: flex;
-		justify-content: center;
 	}
 	.contactus_cont {
 	    display: flex;
@@ -1439,12 +1460,8 @@ vertical-align: middle;
 		align-items: center;
 	}
 	.sale_bloc {
-		align-items: center;
 		width: 100%;
 		max-width: 955px;
-		height: 450px;
-		display: flex;
-		justify-content: center;
 	}
 	.contactus_cont {
 	    display: flex;
@@ -1497,12 +1514,8 @@ vertical-align: middle;
 		align-items: center;
 	}
 	.sale_bloc {
-		align-items: center;
 		width: 100%;
 		max-width: 955px;
-		height: 400px;
-		display: flex;
-		justify-content: center;
 	}
 	.contactus_cont {
 	    display: flex;
@@ -1570,12 +1583,8 @@ vertical-align: middle;
 		align-items: center;
 	}
 	.sale_bloc {
-		align-items: center;
 		width: 100%;
 		max-width: 955px;
-		height: 350px;
-		display: flex;
-		justify-content: center;
 	}
 	.contactus_cont {
 	    display: flex;
@@ -1634,12 +1643,8 @@ vertical-align: middle;
 		align-items: center;
 	}
 	.sale_bloc {
-		align-items: center;
 		width: 100%;
 		max-width: 955px;
-		height: 300px;
-		display: flex;
-		justify-content: center;
 	}
 	.contactus_cont {
 	    display: flex;
