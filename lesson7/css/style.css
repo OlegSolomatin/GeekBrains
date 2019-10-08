@@ -816,7 +816,6 @@ vertical-align: middle;
 	font-weight: 400;
 	border: solid 1px #999999;
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 14px;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: condensed;
@@ -842,7 +841,6 @@ vertical-align: middle;
 	font-weight: 400;
 	border: solid 1px #999999;
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 14px;
 	font-weight: normal;
 	font-style: normal;
 	font-stretch: condensed;
@@ -863,6 +861,13 @@ vertical-align: middle;
 	height: 40px;
 	background-color: #f44336;
 	border: 0;
+	color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+}
+.form button:hover {
+	background-color: grey;
+	transform: scale(1.1);
 }
 .logo_map {
 	color: #f44336;
@@ -1111,7 +1116,10 @@ vertical-align: middle;
 }
 
 
+/**/
 /* PAGE #2 */
+/**/
+
 
 .gallery_container {
 	width: 100%;
@@ -1379,6 +1387,135 @@ vertical-align: middle;
  .form_cont_bloc {
  	background-color: #f7f7f7;
  }
+
+
+/**/
+/* PAGE #3 */
+/**/
+
+
+.game_page_cont {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #f7f7f7;
+}
+.bloc_content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 5%;
+	max-width: 1170px;
+}
+.left_bloc {
+	width: 50%;
+	height: 100%;
+	max-height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.right_bloc {
+	width: 50%;
+	height: 100%;
+	max-width: 585px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.higlights_over {
+	width: 100%;
+	max-width: 585px;
+	height: 100%;
+	display: inline-block;
+}
+.higlights_over img {
+	width: 100%;
+}
+.higlights_strip {
+	width: 100%;
+	max-width: 585px;
+	height: 100%;
+	max-height: 150px;
+	display: flex;
+	flex-direction: row;
+}
+.product_highlights {
+	width: 25%;
+	height: 100%;
+	max-height: 150px;
+	max-width: 146px;
+	margin: 1%;
+}
+.product_highlights img {
+	width: 100%;
+}
+.product_highlights img:hover {
+	transform: scale(1.5);
+	-moz-box-shadow: 0 0 10px #000;
+	-webkit-box-shadow: 0 0 10px #000;
+	box-shadow:0 0 10px #000; 
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.button_product_page {
+	width: 100%;
+	height: 100%;
+	max-height: 50px;
+	max-width: 561px;
+}
+.button_product_page button {
+	width: 80%;
+	height: 50px;
+}
+.description_container_product {
+	width: 80%;
+	height: 100%;
+	margin-top: 2%;
+}
+.game_logo_product {
+	margin-top: 2%;
+}
+.first_name_game {
+	color: #000000;
+	font-family: 'Poppins', sans-serif;
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 36px;
+	height: 100px;
+}
+.episode_name_game {
+	color: #f44336;
+	font-weight: 600;
+}
+.description_product {
+	color: #999999;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 24px;
+	letter-spacing: 0.12px;
+}
+.ourgames {
+	width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e3e3e3;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+.ourgames div {
+	background-color: #e3e3e3;
+}
 @media screen and (min-width: 1170px) {
 	.sell_container {
 		width: 100%;
@@ -1438,6 +1575,15 @@ vertical-align: middle;
 	    margin-top: 5%;
 	    margin-bottom: 7%;
 	}
+	.game_page_cont {
+		align-items: center;
+	}
+	.bloc_content {
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	}
 }
 
 /* Portrait tablets and small desktops */
@@ -1481,6 +1627,15 @@ vertical-align: middle;
 	    height: 100%;
 	    margin-top: 5%;
 	    margin-bottom: 7%;
+	}
+	.game_page_cont {
+		align-items: center;
+	}
+	.bloc_content {
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
 	}
 }
 
@@ -1544,6 +1699,15 @@ vertical-align: middle;
 	    font-stretch: normal;
 	    letter-spacing: normal;
 	    color: #f44336;
+	}
+	.game_page_cont {
+		align-items: center;
+	}
+	.bloc_content {
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
 	}
 }
 
@@ -1614,6 +1778,15 @@ vertical-align: middle;
 	    letter-spacing: normal;
 	    color: #f44336;
 	}
+	.game_page_cont {
+		align-items: center;
+	}
+	.bloc_content {
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	}
 }
 
 /* Landscape phones and smaller */
@@ -1667,5 +1840,14 @@ vertical-align: middle;
 	    font-stretch: normal;
 	    letter-spacing: normal;
 	    color: #f44336;
+	}
+	.game_page_cont {
+		align-items: center;
+	}
+	.bloc_content {
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
 	}
 }
