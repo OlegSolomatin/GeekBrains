@@ -1,0 +1,390 @@
+body {
+	background-color: #f8f8f8;
+	font-family: Oswald, Verdana, Arial;
+	margin: 0px;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.shapka {
+	width: 333px;
+	background-color: #2d2d2d;
+}
+.shapka a:hover {
+	color: grey;
+}
+.whitessilki {
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+}
+table {
+	width: 1000px;
+	border-spacing: 0;
+}
+td, th {
+	margin: 0;
+	padding: 0;
+}
+#inlogo {
+	background-color: #c0c0c0;
+}
+ul {
+	list-style-image: url(../img/iconul.png);
+	list-styl
+}
+li {
+	list-style-type: none;
+}
+.zagolovki {
+	color:black;
+	font-size: 16px;
+	font-weight: 400;
+}
+.namemail {
+	height: 30px;
+	width: 247px;
+	font-size: 15px;
+	font-weight: 400;
+	background-color: #f8f8f8;
+	border-radius: 5px;
+	padding: 0px;
+}
+.buttonkon {
+	height: 30px;
+	width: 80px;
+	border-radius: 5px;
+}
+.opis {
+	color: #707070;
+	font-size: 10px;
+	font-style: italic;
+	line-height: 16px;
+}
+/* ZADANIE #8 */
+.opis:first-letter {
+	font-size: 200%;
+	color: grey;
+}
+.applelogo {
+	width: 100%;
+	height: 85px;
+}
+.podrob-opis-image {
+	height: 597px;
+	width: 597px;
+}
+/*ZADANIE*/
+.podrob-opis {
+	width: 1000px;
+	height: 100;
+	color: white;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	background-color: black;
+}
+.podrob-opis-zag {
+	font-size: 30px;
+	font-weight: 700;
+}
+.podrob-opis-zag:first-letter {
+	font-size: 150%;
+}
+#podrob-opis-back {
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 200%;
+}
+.podrob-opis-zag-small {
+	font-size: 14px;
+	color: #484343;
+}
+#podrob-opis-back2 {
+	background-size: 100%;
+}
+.podrob-opis-zag2 {
+	color: black;
+	font-size: 30px;
+	font-weight: 700;
+}
+.podrob-opis-zag-small2 {
+	font-size: 14px;
+	color: black;
+}
+.protect {
+	align-items: center;
+	background-color: black;
+	width: 500px;
+	height: 500px;
+	color: white;
+	text-align: center;
+}
+#prodisp {
+	background-position: top;
+}
+#camera {
+	background-color: black;
+	background-size: 20%;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+.tochki {
+	font-size: 10px;
+	color: grey;
+}
+.nechetline {
+	background-color: #f3f3f3;
+}
+.tovxar {
+	font-size: 18px;
+	font-weight: 450;
+	font-family: SF Pro Text, Arial;
+}
+.zagxar {
+	font-size: 22px;
+	font-weight: 600;
+}
+#textarena {
+	height: 200px;
+	width: 506px;
+	resize: none;
+	font-size: 19px;
+	font-weight: 400;
+	background-color: #f8f8f8;
+	padding: 0px;
+	border-radius: 5px
+}
+.imgtov {
+	width: 50%;
+	height: 30%;
+	outline: 1px solid grey;
+}
+.imgtov:hover {
+	outline: 0px;
+}
+.imgtov2 {
+	outline: 1px solid grey;
+}
+.imgtov2:hover {
+	outline: 0px;
+}
+/*ZADANIE #6*/
+#inmail:focus {
+	background-color: black;
+	color: yellow;
+}
+/*ZADANIE #7*/
+#textarena, #inname {
+	text-transform: capitalize;
+}
+#zagkon {
+	font-size: 24px;
+	font-weight: 500;
+	font-family: Arial;
+	margin: 0px;
+}
+#logovi {
+	background-repeat: no-repeat;
+	background-size: 15%;
+	background-color: #2d2d2d;
+}
+.page {
+	width: 1000px;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.allcont {
+	width: 1000px;
+	display: block;
+	justify-content: center;
+	margin: auto;
+	height: 100%;
+	padding-right: 0px;
+}
+.menu {
+	width: 1000px;
+	height: 50px;
+	background-color: #2d2d2d;
+	display: flex;
+	justify-content: center;
+}
+.page::-webkit-scrollbar {
+	width:0px;
+}
+.first-page-content {
+	width: 1000px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+}
+.menu-cont {
+	width: 333px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu-cont:hover a {
+	color: grey;
+}
+#logobg {
+	width: 500px;
+	background-color: black;
+	background-image: url(../img/logosmall.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#logobg img {
+	width: 50%;
+	height: 50%;
+	position: relative;
+}
+#welc {
+	width: 500px;
+	background-color: #f8f8f8;
+}
+.footer {
+	padding: 2em;
+	background-color: #f8f8f8;
+	border-top: 1px solid grey;
+	display: flex;
+	justify-content: center;
+}
+#welc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	overflow-x:hidden;
+}
+#welc p {
+	font-size: 15px;
+	margin: 5px;
+}
+.forma {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.icon {
+	width: 50px;
+	height: 50px;
+}
+.icon img {
+	width: 50px;
+	height: 50px;
+}
+.kont {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 5px;
+}
+.adress, .mail, .phone {
+	width: 333px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.kont-fon {
+	font-weight: 500;
+	font-size: 15px;
+}
+.tabtth {
+	display: flex;
+	justify-content: center;
+}
+/*FORMAT BLOC TOVAR*/
+.tabtth {
+	width: 100%;
+	height: 500px;
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+}
+.tabtth-in {
+	width: 100%;
+	height: 500px;
+	display: block;
+	flex-direction: column;
+	justify-content: center;
+}
+.nametov {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.tov {
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	font-weight: 550;
+	border-bottom: 1px solid grey;
+}
+.tov p {
+	padding: 13px;
+}
+.tov-pic-opis {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.pic-opis {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.tov-pic {
+	width: 70%;
+	height: 100%;
+	
+}
+#tov-pic-iphone11-pro {
+	background-image: url(../img/iphone-11-pro.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+}
+#tov-pic-iphone11-pro-max {
+	background-image: url(../img/iphone-11-pro-max.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+}
+.tov-opis {
+	width: 30%;
+	height: 100%;
+	display: block;
+	flex-direction: column;
+}
+.label-opis {
+	border-top: 1px solid grey;
+	background-color: #eaeaea;
+	width: 100%;
+	height: 15%;
+	position: relative;
+}
+/*Выравнивание текста по центру блока*/
+.label-opis p {
+	text-align: center;
+	padding: 3px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.opis {
+	width: 100%;
+	height: 70%;
+}
