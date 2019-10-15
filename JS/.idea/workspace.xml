@@ -47,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.function.js">
+  <component name="RunManager" selected="Node.js.reshenieprepoda.js">
     <configuration name="3.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$USER_HOME$/Desktop/GB/img/3.js" working-dir="$USER_HOME$/Desktop/GB/img">
       <method v="2" />
     </configuration>
@@ -57,29 +57,29 @@
     <configuration default="true" type="NodeJSConfigurationType" path-to-node="C:/Program Files/nodejs/node">
       <method v="2" />
     </configuration>
-    <configuration name="blackjack.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="blackjack.js" working-dir="$PROJECT_DIR$/lesson2">
-      <method v="2" />
-    </configuration>
     <configuration name="chisla.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="chisla.js" working-dir="$PROJECT_DIR$/lesson3">
       <method v="2" />
     </configuration>
     <configuration name="function.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson4/function.js" working-dir="$PROJECT_DIR$/lesson4">
       <method v="2" />
     </configuration>
+    <configuration name="reshenieprepoda.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson4/reshenieprepoda.js" working-dir="$PROJECT_DIR$/lesson4">
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Node.js.blackjack.js" />
       <item itemvalue="Node.js.chisla.js" />
       <item itemvalue="Node.js.Lesson_3.js" />
       <item itemvalue="Node.js.3.js" />
       <item itemvalue="Node.js.function.js" />
+      <item itemvalue="Node.js.reshenieprepoda.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.reshenieprepoda.js" />
         <item itemvalue="Node.js.function.js" />
         <item itemvalue="Node.js.chisla.js" />
         <item itemvalue="Node.js.3.js" />
         <item itemvalue="Node.js.Lesson_3.js" />
-        <item itemvalue="Node.js.blackjack.js" />
       </list>
     </recent_temporary>
   </component>
