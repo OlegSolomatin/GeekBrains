@@ -47,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.chisla.js">
+  <component name="RunManager" selected="Node.js.function.js">
     <configuration name="3.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$USER_HOME$/Desktop/GB/img/3.js" working-dir="$USER_HOME$/Desktop/GB/img">
       <method v="2" />
     </configuration>
@@ -63,14 +63,19 @@
     <configuration name="chisla.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="chisla.js" working-dir="$PROJECT_DIR$/lesson3">
       <method v="2" />
     </configuration>
+    <configuration name="function.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson4/function.js" working-dir="$PROJECT_DIR$/lesson4">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Node.js.blackjack.js" />
       <item itemvalue="Node.js.chisla.js" />
       <item itemvalue="Node.js.Lesson_3.js" />
       <item itemvalue="Node.js.3.js" />
+      <item itemvalue="Node.js.function.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.function.js" />
         <item itemvalue="Node.js.chisla.js" />
         <item itemvalue="Node.js.3.js" />
         <item itemvalue="Node.js.Lesson_3.js" />
@@ -90,6 +95,9 @@
       <updated>1570803254219</updated>
       <workItem from="1570803257259" duration="2388000" />
       <workItem from="1570912541851" duration="3728000" />
+      <workItem from="1571152492979" duration="775000" />
+      <workItem from="1571154586111" duration="4497000" />
+      <workItem from="1571163033596" duration="3333000" />
     </task>
     <servers />
   </component>
