@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search tickets</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <div class="ticketPlace">
+        <h1>Поиск дешевых авиабилетов</h1>
+        <p class="info">Можно вводить название городов вручную</p>
+        <div class="formTicket">
+            <div class="from-one">
+                <h4>Откуда</h4>
+                <input id="from" list="froms" class="input-let">
+                <datalist id="froms">
+                    <option value="Цюрих">
+                    <option value="Аруба">
+                    <option value="Барселона">
+                    <option value="Сингапур">
+                    <option value="Белиз">
+                    <option value="Краснодар">
+                    <option value="Москва">
+                    <option value="Ницца">
+                    <option value="Новосибирск">
+                    <option value="Санкт-Петербург">
+                    <option value="Сочи (Адлер)">
+                </datalist>
+            </div>
+            <div class="to-one">
+                <h4>Куда</h4>
+                <input id="to" list="tos" class="input-let">
+                <datalist id="tos">
+                    <option value="Армения">
+                    <option value="Аруба">
+                    <option value="Барселона">
+                    <option value="Сингапур">
+                    <option value="Краснодар">
+                    <option value="Краснодар">
+                    <option value="Москва">
+                    <option value="Ницца">
+                    <option value="Новосибирск">
+                    <option value="Санкт-Петербург">
+                    <option value="Сочи (Адлер)">
+                </datalist>
+            </div>
+            <div class="drops">
+                <input type="checkbox" id="one_way" checked>
+                <label id="checkbox">В одну сторону</label>
+            </div>
+            <button id="btn" onerror="notFound()" onclick="loadResult()">Найти</button>
+        </div>
+        <div class="answer">
+            <p id="depart_date"></p>
+            <p id="gate"></p>
+            <p id="distance"></p>
+            <p id="return_date"></p>
+            <p id="value"></p>
+            <p id="pone"></p>
+            <p id="about"></p>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="js/scriptJS.js"></script>
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+
+</html>
