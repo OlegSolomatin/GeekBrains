@@ -1,0 +1,18 @@
+GET https://www.travelpayouts.com/widgets_suggest_params?q=Из Москвы в Париж
+
+<> 2019-10-18T013445.200.json
+
+###
+
+GET https://www.travelpayouts.com/widgets_suggest_params?q=Из $Москвы в $Париж
+
+<> 2019-10-18T013410.200.json
+
+###
+
+GET http://min-prices.aviasales.ru/calendar_preload?origin_iata=MOW&depart_date=2019-11-11&destination_iata=NCE&one_way=false;
+
+<> 2019-10-17T043455.200.json
+
+###
+

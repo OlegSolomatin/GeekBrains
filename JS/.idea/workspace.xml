@@ -14,7 +14,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -26,14 +28,93 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="2145916555000" />
+                <option name="domain" value="www.travelpayouts.com" />
+                <option name="name" value="auid_tp" />
+                <option name="path" value="/" />
+                <option name="value" value="CtY4vl2plSNCTWCaRMldAg==" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://www.travelpayouts.com/widgets_suggest_params" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="q" />
+                <option name="value" value="Из Москвы в Париж" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://www.travelpayouts.com/widgets_suggest_params" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="q" />
+                <option name="value" value="Из $Москвы в $Париж" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://min-prices.aviasales.ru/calendar_preload" />
+          <option name="urlPath" value="" />
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="origin_iata" />
+                <option name="value" value="MOW" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="depart_date" />
+                <option name="value" value="2019-11-11" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="destination_iata" />
+                <option name="value" value="NCE" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="one_way" />
+                <option name="value" value="false;" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,39 +128,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.test.js">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="avia#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson5/avia.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="dz5.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/lesson5/dz5.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/lesson5/copysite/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" path-to-node="C:/Program Files/nodejs/node">
       <method v="2" />
     </configuration>
-    <configuration name="chisla.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="chisla.js" working-dir="$PROJECT_DIR$/lesson3">
+    <configuration name="scriptJS.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson5/copysite/scriptJS.js" working-dir="$PROJECT_DIR$/lesson5/copysite">
       <method v="2" />
     </configuration>
-    <configuration name="function.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson4/function.js" working-dir="$PROJECT_DIR$/lesson4">
-      <method v="2" />
-    </configuration>
-    <configuration name="lesson4.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$USER_HOME$/AppData/Local/Temp/Rar$DIa8464.38025/lesson4.js" working-dir="$USER_HOME$/AppData/Local/Temp/Rar$DIa8464.38025">
-      <method v="2" />
-    </configuration>
-    <configuration name="reshenieprepoda.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson4/reshenieprepoda.js" working-dir="$PROJECT_DIR$/lesson4">
-      <method v="2" />
-    </configuration>
-    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson5/test.js" working-dir="$PROJECT_DIR$/lesson5">
+    <configuration name="test123.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson5/test123.js" working-dir="$PROJECT_DIR$/lesson5">
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.chisla.js" />
-      <item itemvalue="Node.js.function.js" />
-      <item itemvalue="Node.js.reshenieprepoda.js" />
-      <item itemvalue="Node.js.lesson4.js" />
-      <item itemvalue="Node.js.test.js" />
+      <item itemvalue="HTTP Request.avia#1" />
+      <item itemvalue="JavaScript Debug.dz5.html" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Node.js.test123.js" />
+      <item itemvalue="Node.js.scriptJS.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.test.js" />
-        <item itemvalue="Node.js.lesson4.js" />
-        <item itemvalue="Node.js.reshenieprepoda.js" />
-        <item itemvalue="Node.js.function.js" />
-        <item itemvalue="Node.js.chisla.js" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.scriptJS.js" />
+        <item itemvalue="Node.js.test123.js" />
+        <item itemvalue="HTTP Request.avia#1" />
+        <item itemvalue="JavaScript Debug.dz5.html" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +181,9 @@
       <workItem from="1571163033596" duration="3333000" />
       <workItem from="1571166950802" duration="1081000" />
       <workItem from="1571236867293" duration="3394000" />
+      <workItem from="1571319191469" duration="1483000" />
+      <workItem from="1571390756526" duration="11593000" />
+      <workItem from="1571438560275" duration="7226000" />
     </task>
     <servers />
   </component>

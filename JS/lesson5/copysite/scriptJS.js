@@ -1,6 +1,6 @@
-function zapros() {
+function loadResult() {
     const request = new XMLHttpRequest();
-    request.open('GET', `https://www.travelpayouts.com/widgets_suggest_params?q=Из%20${document.getElementById('dep').value}%20в%20${document.getElementById('ret').value}`, false);
+    request.open('GET', `https://www.travelpayouts.com/widgets_suggest_params?q=Из%20${document.getElementById('from').value}%20в%20${document.getElementById('to').value}`, false);
     request.send();
     const originIata = JSON.parse(request.response).origin.iata;
     const destinationIata = JSON.parse(request.response).destination.iata;

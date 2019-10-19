@@ -5,5 +5,5 @@
 # * 'gtrp' and 'gtr' create a GET request with or without query parameters;
 # * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
 # * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
-GET http://min-prices.aviasales.ru/calendar_preload?origin_iata=MOW&depart_date=2019-11-11&destination_iata=NCE&one_way=false;
+GET https://www.travelpayouts.com/widgets_suggest_params?q=%D0%98%D0%B7%20%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D1%8B%20%D0%B2%20%D0%9F%D0%B0%D1%80%D0%B8%D0%B6
 ###

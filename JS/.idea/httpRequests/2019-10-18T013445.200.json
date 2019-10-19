@@ -1,0 +1,10 @@
+{
+  "origin": {
+    "iata": "MOW",
+    "name": "Москва"
+  },
+  "destination": {
+    "iata": "PAR",
+    "name": "Париж"
+  }
+}
