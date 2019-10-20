@@ -128,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="HTTP Request.avia#1">
     <configuration name="avia#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson5/avia.http">
       <method v="2" />
     </configuration>
@@ -156,11 +156,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="Node.js.scriptJS.js" />
-        <item itemvalue="Node.js.test123.js" />
         <item itemvalue="HTTP Request.avia#1" />
+        <item itemvalue="Node.js.test123.js" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.dz5.html" />
+        <item itemvalue="Node.js.scriptJS.js" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +184,7 @@
       <workItem from="1571319191469" duration="1483000" />
       <workItem from="1571390756526" duration="11593000" />
       <workItem from="1571438560275" duration="7226000" />
+      <workItem from="1571586886957" duration="6110000" />
     </task>
     <servers />
   </component>

@@ -11,6 +11,10 @@
 <body>
     <div class="container">
         <div class="container_search">
+            <div class="logo_title">
+                <h1>Все Авиабилеты в одном месте
+                </h1>
+            </div>
             <div class="container_input">
                 <div class="cont_datalist">
                     <input id="dep" list="departe" class="pole_datalist  pole_datalist_first" placeholder="Откуда">
@@ -19,32 +23,56 @@
                         <option value="Мадрид"></option>
                         <option value="Москва"></option>
                         <option value="Париж"></option>
-                        <option vaue="Нью-Йорк"></option>
+                        <option value="Нью-Йорк"></option>
+                        <option value="Ницца"></option>
+                        <option value="Санкт-Петербург"></option>
+                        <option value="Лондон"></option>
+                        <option value="Сидней"></option>
+                        <option value="Рим"></option>
+                        <option value="Сан-Франциско"></option>
+                        <option value="Амстердам"></option>
                     </datalist>
                 </div>
                 <div class="cont_datalist">
-                    <input id="ret" list="return" class="pole_datalist" placeholder="Куда">
+                    <input id="ret" list="return" class="pole_datalist pole_datalist_second" placeholder="Куда">
                     <datalist id="return">
                         <option value="Барселона"></option>
                         <option value="Мадрид"></option>
                         <option value="Москва"></option>
                         <option value="Париж"></option>
-                        <option vaue="Нью-Йорк"></option>
+                        <option value="Нью-Йорк"></option>
+                        <option value="Ницца"></option>
+                        <option value="Санкт-Петербург"></option>
+                        <option value="Лондон"></option>
+                        <option value="Сидней"></option>
+                        <option value="Рим"></option>
+                        <option value="Сан-Франциско"></option>
+                        <option value="Амстердам"></option>
                     </datalist>
-                </div>
-                <div class="container_call">
-                    <input type="date" class="pole_call">
                 </div>
                 <!--<div class="container_call">
                     <input type="date" class="pole_call">
                 </div>-->
+
+                <!--<div class="container_call">
+                    <input type="date" class="pole_call">
+                </div>-->
+            </div>
+            <div class="drops">
+            <input type="checkbox" id="one_way" checked>
+            <label id="checkbox">В одну сторону</label>
             </div>
             <div class="container_element">
-                <div class="drops">
-                    <input type="checkbox" id="one_way" checked>
-                    <label id="checkbox">В одну сторону</label>
-                </div>
-                <button id="btn" onerror="notFound()" onclick="zapros()">Найти</button>
+                <button id="btn" onerror="notFound()" onclick="zapros()">Поиск</button>
+            </div>
+            <div class="answer">
+                <p id="depart_date"></p>
+                <p id="gate"></p>
+                <p id="distance"></p>
+                <p id="return_date"></p>
+                <p id="value"></p>
+                <p id="pone"></p>
+                <p id="about"></p>
             </div>
         </div>
     </div>

@@ -20,7 +20,7 @@ function zapros() {
         }
     }
     for (prop in allTickets) {
-        if (parseInt((allTickets[prop].depart_date).replace(/[-]/g, '')) >= 20191015 && parseInt((allTickets[prop].depart_date).replace(/[-]/g, '')) <= 20191030) {
+        if (parseInt((allTickets[prop].depart_date).replace(/[-]/g, '')) >= 20191020 && parseInt((allTickets[prop].depart_date).replace(/[-]/g, '')) <= 20191030) {
             tickets[prop] = allTickets[prop];
         }
     }
