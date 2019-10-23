@@ -128,7 +128,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.avia#1">
+  <component name="RunManager" selected="Node.js.dz6.js">
     <configuration name="avia#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson5/avia.http">
       <method v="2" />
     </configuration>
@@ -141,7 +141,7 @@
     <configuration default="true" type="NodeJSConfigurationType" path-to-node="C:/Program Files/nodejs/node">
       <method v="2" />
     </configuration>
-    <configuration name="scriptJS.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson5/copysite/scriptJS.js" working-dir="$PROJECT_DIR$/lesson5/copysite">
+    <configuration name="dz6.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson6/dz6.js" working-dir="$PROJECT_DIR$/lesson6">
       <method v="2" />
     </configuration>
     <configuration name="test123.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson5/test123.js" working-dir="$PROJECT_DIR$/lesson5">
@@ -152,15 +152,15 @@
       <item itemvalue="JavaScript Debug.dz5.html" />
       <item itemvalue="JavaScript Debug.index.html" />
       <item itemvalue="Node.js.test123.js" />
-      <item itemvalue="Node.js.scriptJS.js" />
+      <item itemvalue="Node.js.dz6.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.dz6.js" />
         <item itemvalue="HTTP Request.avia#1" />
         <item itemvalue="Node.js.test123.js" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.dz5.html" />
-        <item itemvalue="Node.js.scriptJS.js" />
       </list>
     </recent_temporary>
   </component>
@@ -185,6 +185,7 @@
       <workItem from="1571390756526" duration="11593000" />
       <workItem from="1571438560275" duration="7226000" />
       <workItem from="1571586886957" duration="6110000" />
+      <workItem from="1571843409794" duration="4120000" />
     </task>
     <servers />
   </component>
