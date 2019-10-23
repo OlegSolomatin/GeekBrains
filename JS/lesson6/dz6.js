@@ -5,7 +5,7 @@
     Цикл должен выбирать случайным образом одну из живых птиц и скармливать ей любую другую
 (та, которая съедена, становится wasEaten = true, а та, которую покормили, —point++)
 Создал генеротор с именами птиц. Нужное количество птиц укажите в переменной ниже Максимальное количество имён для генерации 52шт*/
-const kolbird = 9;                                          //  9 = 10элементов в массиве
+const kolbird = 99;                                          //  9 = 10элементов в массиве
 
 function getRandom(abs) {
     return abs[Math.floor(Math.random()*(abs.length))];                 //функция случайного выбора той которая умрет
@@ -29,6 +29,16 @@ function chek2() {                                                          //ф
         i++;
     }
     return (w);
+}
+function chek3() {                                                         //функция проверки на количество выживших
+    let i = 0;
+    while ( i < royal_nest.length){
+        if (royal_nest[i].wasEasten === false ) {
+            q = royal_nest[i].name;
+        }
+        i++;
+    }
+    return(q);
 }
 function deletArr(abs) {
     return abs.pop(abs.splice(abs.indexOf(absFinal), 1));                      //удаление элемента из массива с двумя птицами
@@ -74,10 +84,17 @@ while (chek() !== 1) {                                                  //про
     }
     w = 0;                                                              //обнуление счетчика
 }
-console.log(royal_nest);                                                //вывод общей таблицы зачета
+royal_nest.sort((a, b) => a.poi - b.poi);                                                //вывод общей таблицы зачета
+for (let i = 0; i < royal_nest.length; i++){
+    console.log(royal_nest[i].name + "  " + royal_nest[i].poi + "   " + royal_nest[i].wasEasten);
+}
 if (chek2() == 2) {
     console.log("Победила в Royal Battle " + name + ": набрано очков = " + point);
 }
 else if (chek2() > 2) {
     console.log("Массовая ничья, несколько птиц закончили в одинаковым количеством очков = " + point);
+}
+w = 0;
+if (chek3() == 1) {
+    console.log("Выжил в битве " + royal_nest[q].name + " :набрано очков = " + royal_nest[w].poi);
 }
