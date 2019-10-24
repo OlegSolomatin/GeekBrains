@@ -15,8 +15,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -128,39 +128,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.dz6.js">
+  <component name="RunManager" selected="Node.js.cinema.js">
     <configuration name="avia#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/lesson5/avia.http">
       <method v="2" />
     </configuration>
-    <configuration name="dz5.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/lesson5/dz5.html" useBuiltInWebServerPort="true">
+    <configuration name="6.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$USER_HOME$/Desktop/6.js" working-dir="$USER_HOME$/Desktop">
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/lesson5/copysite/index.html" useBuiltInWebServerPort="true">
+    <configuration name="фыв.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson6/фыв.js" working-dir="$PROJECT_DIR$/lesson6">
       <method v="2" />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" path-to-node="C:/Program Files/nodejs/node">
       <method v="2" />
     </configuration>
-    <configuration name="dz6.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson6/dz6.js" working-dir="$PROJECT_DIR$/lesson6">
+    <configuration name="cinema.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson7/cinema.js" working-dir="$PROJECT_DIR$/lesson7">
       <method v="2" />
     </configuration>
-    <configuration name="test123.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson5/test123.js" working-dir="$PROJECT_DIR$/lesson5">
+    <configuration name="dz6.js" type="NodeJSConfigurationType" temporary="true" path-to-node="C:/Program Files/nodejs/node" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/lesson6/dz6.js" working-dir="$PROJECT_DIR$/lesson6">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="HTTP Request.avia#1" />
-      <item itemvalue="JavaScript Debug.dz5.html" />
-      <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="Node.js.test123.js" />
       <item itemvalue="Node.js.dz6.js" />
+      <item itemvalue="Node.js.фыв.js" />
+      <item itemvalue="Node.js.6.js" />
+      <item itemvalue="Node.js.cinema.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.cinema.js" />
+        <item itemvalue="Node.js.6.js" />
+        <item itemvalue="Node.js.фыв.js" />
         <item itemvalue="Node.js.dz6.js" />
         <item itemvalue="HTTP Request.avia#1" />
-        <item itemvalue="Node.js.test123.js" />
-        <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="JavaScript Debug.dz5.html" />
       </list>
     </recent_temporary>
   </component>
@@ -186,6 +186,10 @@
       <workItem from="1571438560275" duration="7226000" />
       <workItem from="1571586886957" duration="6110000" />
       <workItem from="1571843409794" duration="4120000" />
+      <workItem from="1571848072459" duration="752000" />
+      <workItem from="1571849154362" duration="615000" />
+      <workItem from="1571931730767" duration="7000" />
+      <workItem from="1571931802038" duration="8047000" />
     </task>
     <servers />
   </component>
