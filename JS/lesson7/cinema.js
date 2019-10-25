@@ -52,6 +52,8 @@ class film {
         let sumRate = 0;
         this.comments.forEach(comments => sumRate += comments.rate);
         return (this.comments.length > 0 ) ? (sumRate / this.comments.length).toFixed(1) : 0;
+        //альтернатива
+        //return this.comments.length > 0 ? this.comments.reduce((sum, arr) => sum + arr.stars, 0) / this.comments.length : 0;
     }*/
 }
 class comm {
