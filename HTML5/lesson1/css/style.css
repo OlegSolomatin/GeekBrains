@@ -155,10 +155,11 @@ main header {
     display: flow-root;
 }
 .reviews section {
-    width: 574px;
+    width: calc(50% - 8px);
 }
 .reviews section figure {
-    height: 150px;
+    margin-bottom: 15px;
+    display: flex;
 }
 .reviews
 .canvas_reviews {
@@ -178,9 +179,10 @@ main header {
 .reviews_text {
     background-image: url("../img/bg_review.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
     float: left;
-    width: 483px;
-    height: 121px;
     color: #333333;
     font-family: "Arial", sans-serif;
     font-style: italic;
@@ -189,14 +191,11 @@ main header {
     line-height: 18px;
 }
 .reviews_text p {
-    width: 436px;
-    height: 64px;
-    margin: 16px 20px 15px 27px;
+    margin: 16px 27px;
 }
 .author_reviews {
     margin: 0 0 0 27px;
-    width: auto;
-    height: auto;
+    width: fit-content;
     color: #989898;
     font-family: "Arial", sans-serif;
     font-size: 14px;
@@ -481,6 +480,14 @@ form textarea {
     .screenshots section {
         width: auto;
     }
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .reviews section {
+        width: auto;
+    }
 }
 
 /* Landscape phones and smaller */
@@ -549,5 +556,22 @@ form textarea {
     .canvas_screen {
         width: 200px;
         height: auto;
+    }
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .reviews section {
+        width: auto;
+    }
+    .canvas_reviews {
+        display: none;
+    }
+    .reviews_text {
+        background-image: none;
+        background-color: #ebebeb;
+        border-radius: 5px;
+        padding: 10px;
     }
 }
