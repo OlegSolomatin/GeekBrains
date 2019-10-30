@@ -292,6 +292,13 @@ main header {
     background-color: #445162;
     display: flow-root;
 }
+.forma div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    width: 700px;
+}
 .forma h2 {
     color: #ffffff;
     font-family: "Arial", sans-serif;
@@ -429,6 +436,13 @@ form textarea {
     .screenshots section {
         width: auto;
     }
+    .price {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .price ul {
+        margin-bottom: 15px;
+    }
 }
 
 /* Landscape phones and portrait tablets */
@@ -487,6 +501,13 @@ form textarea {
     }
     .reviews section {
         width: auto;
+    }
+    .price {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .price ul {
+        margin-bottom: 15px;
     }
 }
 
@@ -573,5 +594,12 @@ form textarea {
         background-color: #ebebeb;
         border-radius: 5px;
         padding: 10px;
+    }
+    .price {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .price ul {
+        margin-bottom: 15px;
     }
 }
