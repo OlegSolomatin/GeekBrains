@@ -110,9 +110,9 @@
             for (let film of films) {
                 const newEl = document.createElement("div");//создаен новый элемент
                 newEl.classList.add("films_list");//константе в которой эелемент даем класс
-                newEl.innerHTML = '<figure class="films_block"> <h2>'+film.name+'</h2> </figure>';
+                newEl.innerHTML = '<figure class="films_block"> <img class="canvas_block_list"> <h4>'+film.name+'</h4> <div class="rating_films">'+globalrate+'</div> </figure>';
                 newEl.addEventListener("click", function () {
-                    document.querySelector(".films_block").innerHTML = "";
+                    document.querySelector(".films_list").innerHTML = "";
                     const comments = getFilmComments(film.name);
                     newEl.innerHTML += '<figure class="films_block">  <img class="canvas_block"> <figcaption class="film_description"> <h2>'+film.name+'</h2> <ul><li><div class="description_elem">режиссер</div> <span class="get_const">'+film.director+'</span></li> <li><div class="description_elem">год</div> <span class="get_const">'+film.date+'</span></li> <li><div class="description_elem">страна</div> <span class="get_const">'+film.country+'</span></li> <li><div class="description_elem">жанр</div> <span class="get_const">'+film.category+'</span></li></ul> </figcaption> </figure>';
                 })
