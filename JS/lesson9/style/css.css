@@ -1,7 +1,16 @@
+body {
+    background-color: #b3b3b0;
+    font-family: "Arial", sans-serif;
+    background: -webkit-linear-gradient(top, #b3b3b0 0%, #e3e2dd 500px);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
 .container {
     max-width: 1000px;
     height: auto;
     margin: 0 auto;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    padding: 0;
 }
 .navigate_menu {
     background-color: #343a40!important;
@@ -22,11 +31,6 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
-.ContentBackground__background-gradient-container--f7uL8 {
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex
-}
 .collapse:not(.show) {
     display: block;
 }
@@ -41,13 +45,13 @@
     justify-content: flex-start;
 }
 .films_list {
-    color: orangered;
+    color: black;
     font-size: 12px;
-    background-color: #343a40!important;
-    padding: 15px;
+    background-color: #f2f2f2;
 }
 .films_block {
     display: flex;
+    padding: 15px;
 }
 .canvas_block {
     width:  200px;
@@ -62,11 +66,84 @@
     margin-right: 15px;
 }
 .description_elem {
-    width: 150px;
+    width: 100px;
     margin-right: 25px;
+}
+.response {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 0 15px 0;
+}
+.author_label {
+    width: 35px;
+    height: 40px;
+    background-color: darkgrey;
+    margin-right: 25px;
+}
+.profile_name {
+    margin-right: 15px;
+    font-size: 16px;
+}
+.bot_review {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 15px 20px 15px;
+    color: black;
+    margin: 25px 15px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+.type {
+    color: coral;
+    font-size: 12px;
+}
+.get_const {
+    color: #005;
+    font-weight: 500;
 }
 li {
     display: flex;
+}
+figure {
+    margin: 0px;
+}
+.new_comment_user {
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.form_body {
+    max-width: 60%;
+    flex-direction: column;
+    display: flex;
+    background-color: #f2f2f2;
+    padding: 3% 2%;
+    border-radius: 5px;
+}
+.name_user {
+    margin-bottom: 3%;
+    min-width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+.comment_user {
+    margin-top: 2%;
+    min-height: 50px;
+    max-height: 300px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
+    padding: 5px;
 }
 @media  screen and (min-width: 1250px) {
     .nav_none {

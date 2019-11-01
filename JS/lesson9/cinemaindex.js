@@ -36,7 +36,7 @@ const base_comm = {
 const films = [];
 let x = sumrate = globalrate = 0;
 class film {
-    constructor ( name, cat, date, country, director){
+    constructor ( name, cat, date, country, director, id){
         this.name = name;
         this.rate = globalrate;
         this.category = categories [ cat ];
@@ -99,10 +99,10 @@ function getAverageRate (n) {
     globalrate = (sumrate / films[n].comments.length) ;
     return(globalrate);
 }
-films.push( new film("Интерстеллар",3,"2014",0,"Кристофер Нолан"));
-films.push( new film("Иван Васильевич меняет профессию",0,"1976",0,"Леонид Гайдай"))
-films.push( new film("1+1",1,"2011",3,"Оливье Накаш"));
-films.push( new film("Побег из Шоушенка",1,"1994",1,"Фрэнк Дарабонт"));
+films.push( new film("Интерстеллар",3,"2014",0,"Кристофер Нолан",258687));
+films.push( new film("Иван Васильевич меняет профессию",0,"1976",0,"Леонид Гайдай",42664));
+films.push( new film("1+1",1,"2011",3,"Оливье Накаш",));
+films.push( new film("Побег из Шоушенка",1,"1994",1,"Фрэнк Дарабонт", 326));
 films.push( new film("Молчание ягнят",2,"1990",1,"Джонатан Демме"));
 films.push( new film("Начало",3,"2010",1,"Кристофер Нолан"));
 films.push( new film("Чернобыль (мини-сериал)",4,"2019",1,"Йохан Ренк"));
@@ -163,7 +163,8 @@ for (let n = 0; n < films.length; n++) {
         console.log("");
     }
 }
-for (let film of films) {
-    let r = film.name;
-    console.log(r);
+for (let n = 0; n < films.length; n++) {
+    for (let i = 0; i < films[n].comments.length; i++) {
+        console.log(films[n].comments);
+    }
 }

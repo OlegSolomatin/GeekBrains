@@ -15,11 +15,6 @@
                <div class="collapse" id="navbarToggleExternalContent">
                    <div class="bg-dark p-4">
                        <nav class="nav nav-pills nav-fill nav_cat">
-                           <!--<a class="nav-item nav-link" href="#" onclick="CategoryUp('Комедия')">Комедия</a>
-                           <a class="nav-item nav-link" href="#" onclick="CategoryUp('Драмма')">Драмма</a>
-                           <a class="nav-item nav-link" href="#" onclick="CategoryUp('Ужасы')">Ужасы</a>
-                           <a class="nav-item nav-link" href="#" onclick="CategoryUp('Фантастика')">Фантастика</a>
-                           <a class="nav-item nav-link" href="#" onclick="CategoryUp('Сериалы')">Сериалы</a>-->
                        </nav>
                    </div>
                </div>
@@ -48,21 +43,21 @@
                             <div class="carousel-item active">
                                 <img src="img/chernobl.jpg" class="d-block w-100 gradient_image" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
+                                    <h5>Чернобль</h5>
                                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="img/interstellar_cover.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
+                                    <h5>Интерстеллар</h5>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="img/shoushenk_cover.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
+                                    <h5>Побег из Шоушенка</h5>
                                     <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                                 </div>
                             </div>
@@ -84,42 +79,7 @@
         </footer>
     </div>
     <script src="cinemaindex.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            for (let category of categories) {
-                const newEl = document.createElement("a");
-                newEl.classList.add("nav-item");
-                newEl.classList.add("nav-link");
-                newEl.href = '#';
-                newEl.innerText = category;
-                newEl.addEventListener("click", function (){
-                    CategoryUp(category);
-                })
-                document.querySelector(".nav_cat").appendChild(newEl);
-            }
-        });
-        
-        function getFilmComments(filmName) {
-            const film = films.filter( f => f.name === filmName ) [0];//возвращает true если равенство верное
-            return film.comments;
-        }
-        
-        function CategoryUp(categoryname) {
-            document.querySelector(".films_cont").innerHTML = "";
-            const films = getFilmsByCategory(categoryname);
-            for (let film of films) {
-                const newEl = document.createElement("div");//создаен новый элемент
-                newEl.classList.add("films_list");//константе в которой эелемент даем класс
-                newEl.innerHTML = '<figure class="films_block"> <img class="canvas_block_list"> <h4>'+film.name+'</h4> <div class="rating_films">'+globalrate+'</div> </figure>';
-                newEl.addEventListener("click", function () {
-                    document.querySelector(".films_list").innerHTML = "";
-                    const comments = getFilmComments(film.name);
-                    newEl.innerHTML += '<figure class="films_block">  <img class="canvas_block"> <figcaption class="film_description"> <h2>'+film.name+'</h2> <ul><li><div class="description_elem">режиссер</div> <span class="get_const">'+film.director+'</span></li> <li><div class="description_elem">год</div> <span class="get_const">'+film.date+'</span></li> <li><div class="description_elem">страна</div> <span class="get_const">'+film.country+'</span></li> <li><div class="description_elem">жанр</div> <span class="get_const">'+film.category+'</span></li></ul> </figcaption> </figure>';
-                })
-                document.querySelector(".films_cont").appendChild(newEl);//определяем место где создастья новый блок
-            }
-        }
-    </script>
+    <script src="logick.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
