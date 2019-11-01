@@ -20,14 +20,14 @@ function getFilmComments(filmName) {
     return film.comments;
 }
 
-/*function renderCommentForm (film){
-    const content = '<div class="review_user"> Оставить рецензию на фильм '+film.name+'</div><form class="form_body">' +
-        '<input class="name_user" placeholder="you name"><input class="comment_user" placeholder="you review"></form>';
+function renderCommentForm (film){
+    const content = '<section class="new_comment_user"><h3 class="review_user"> Добавить свою рецензию на фильм: '+film.name+'</h3></section> <form class="form_body">' +
+    '<input class="name_user" placeholder="you name"><input class="comment_user" placeholder="you review"></form>';
     const form = document.createElement("div");
     form.classList.add("new_comment_user");
     form.innerHTML = content;
     return form;
-}*/
+}
 
 function openFilmBloc(film, newEl) {
     const comments = getFilmComments(film.name);
@@ -36,19 +36,18 @@ function openFilmBloc(film, newEl) {
         tex += '<div class="bot_review"><div class="author"><div class="author_label"></div> <footer class="profile_name"> '+ c.author +' </footer> <div class="rate_author"> '+ c.rate +' </div> </div><div class="comment"> '+ c.text +' </div></div>';
     });
     newEl.innerHTML = '<figure class="films_block">  <img class="canvas_block"> <figcaption class="film_description"> <h2>'+film.name+'</h2> <ul class="type"><li><div class="description_elem">режиссер</div> <span class="get_const">'+film.director+'</span></li> <li><div class="description_elem">год</div> <span class="get_const">'+film.date+'</span></li> <li><div class="description_elem">страна</div> <span class="get_const">'+film.country+'</span></li> <li><div class="description_elem">жанр</div> <span class="get_const">'+film.category+'</span></li></ul> </figcaption> </figure> ' +
-        '<div class="response"> '+tex+'</div> <section class="new_comment_user"><h3 class="review_user"> Добавить свою рецензию на фильм: '+film.name+'</h3><form class="form_body">' +
-    '<input class="name_user" placeholder="you name"><input class="comment_user" placeholder="you review"></form></section>';
-    /*newEl.addEventListener("click", function () {
-        newEl.stopPropagation();
-    })*/
-    /*const addCommentButton = document.createElement("button");
+        '<div class="response"> '+tex+'</div>';
+    const addCommentButton = document.createElement("button");
     addCommentButton.innerText = "Добавить рецензию";
+    addCommentButton.classList.add("btn");
+    addCommentButton.classList.add("btn-outline-secondary");
+    addCommentButton.classList.add("but_reviews");
     addCommentButton.addEventListener("click", function (event) {
         event.stopPropagation();
         const commentForm = renderCommentForm(film);
         newEl.appendChild(commentForm);
     })
-    newEl.appendChild(addCommentButton);*/
+    newEl.appendChild(addCommentButton);
 }
 
 function onFilmClick(film, newEl) {
@@ -68,12 +67,7 @@ function renderFilm(film) {
 
     newEl.addEventListener("click", function () {
         onFilmClick(film, newEl);
-        $(".films_cont").children(":not(#id_n)").remove();
-        /*$('.films_cont').each(function(){
-            $(this).append($('.films_block'));
-            $(this).children().not('.films_block').remove();
-        });*/
-
+        /*$(".films_cont").children(":not(#id_n)").remove();*/
     });
     document.querySelector(".films_cont").appendChild(newEl);//определяем место где создастья новый блок
 }
