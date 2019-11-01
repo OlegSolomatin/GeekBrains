@@ -43,7 +43,8 @@ class film {
         this.date = date;
         this.country = countries [ country ];
         this.director = director;
-        this.comments = []
+        this.comments = [];
+        this.idkino = id;
     }
     addComent ( authorname, rate, text) {
         this.comments.push( new comm(authorname, rate, text) );
@@ -101,14 +102,14 @@ function getAverageRate (n) {
 }
 films.push( new film("Интерстеллар",3,"2014",0,"Кристофер Нолан",258687));
 films.push( new film("Иван Васильевич меняет профессию",0,"1976",0,"Леонид Гайдай",42664));
-films.push( new film("1+1",1,"2011",3,"Оливье Накаш",));
+films.push( new film("1+1",1,"2011",3,"Оливье Накаш",535341));
 films.push( new film("Побег из Шоушенка",1,"1994",1,"Фрэнк Дарабонт", 326));
-films.push( new film("Молчание ягнят",2,"1990",1,"Джонатан Демме"));
-films.push( new film("Начало",3,"2010",1,"Кристофер Нолан"));
-films.push( new film("Чернобыль (мини-сериал)",4,"2019",1,"Йохан Ренк"));
-films.push( new film("Карты, деньги, два ствола",0,"1998",2,"Гай Ричи"));
-films.push( new film("Сонная Лощина",2,"1999",0,"Тим Бёртон"));
-films.push( new film("Шерлок",4,"2010",2,"Пол МакГиган"));
+films.push( new film("Молчание ягнят",2,"1990",1,"Джонатан Демме", 345));
+films.push( new film("Начало",3,"2010",1,"Кристофер Нолан",447301));
+films.push( new film("Чернобыль (мини-сериал)",4,"2019",1,"Йохан Ренк", 1227803));
+films.push( new film("Карты, деньги, два ствола",0,"1998",2,"Гай Ричи", 522));
+films.push( new film("Сонная Лощина",2,"1999",0,"Тим Бёртон",5622));
+films.push( new film("Шерлок",4,"2010",2,"Пол МакГиган",502838));
 //Все имена авторов, выставленный ими рейтинг, и коментарии выбираются случайным образом.
 films[0].addComent(nameaut(), rateran(), commran());
 films[0].addComent(nameaut(), rateran(), commran());
@@ -168,3 +169,68 @@ for (let n = 0; n < films.length; n++) {
         console.log(films[n].comments);
     }
 }
+console.log(films);
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*var xhr = new XMLHttpRequest();
+const idkinopoisk = 342;
+xhr.open('GET', 'https://rating.kinopoisk.ru/' + idkinopoisk +'.xml', false);
+xhr.send();
+if (xhr.status != 200) {
+    console.log( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
+} else {
+    console.log( xhr.responseText );
+}
+/*for (let n = 0; n < films.length; n++) {
+// описание функции
+    function get_rating( $id = null ) {
+        $rating = [];
+        if ( ! empty( $id ) ) {
+            $xml   = simplexml_load_file( 'https://rating.kinopoisk.ru/' + $id +'.xml' );
+            https://rating.kinopoisk.ru/678552.xml
+            $names = ['kp_rating', 'imdb_rating'];
+            forEach ( $names as $name ) {
+                $new_name = str_replace( '_rating', '', $name );
+                $rating[ $new_name ] = dom_import_simplexml( $xml->$name )->nodeValue;
+            }
+        }
+
+        return $rating;
+    }
+
+// вызов функции
+    $rating = get_rating(347);
+
+// выводим рейтинг КиноПоиск
+    console.log($rating['kp']);
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    11
+    12
+    13
+    14
+    15
+    16
+    17
+    18
+    19
+    20*/

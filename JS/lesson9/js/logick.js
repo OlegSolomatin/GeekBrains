@@ -38,6 +38,9 @@ function openFilmBloc(film, newEl) {
     newEl.innerHTML = '<figure class="films_block">  <img class="canvas_block"> <figcaption class="film_description"> <h2>'+film.name+'</h2> <ul class="type"><li><div class="description_elem">режиссер</div> <span class="get_const">'+film.director+'</span></li> <li><div class="description_elem">год</div> <span class="get_const">'+film.date+'</span></li> <li><div class="description_elem">страна</div> <span class="get_const">'+film.country+'</span></li> <li><div class="description_elem">жанр</div> <span class="get_const">'+film.category+'</span></li></ul> </figcaption> </figure> ' +
         '<div class="response"> '+tex+'</div> <section class="new_comment_user"><h3 class="review_user"> Добавить свою рецензию на фильм: '+film.name+'</h3><form class="form_body">' +
     '<input class="name_user" placeholder="you name"><input class="comment_user" placeholder="you review"></form></section>';
+    /*newEl.addEventListener("click", function () {
+        newEl.stopPropagation();
+    })*/
     /*const addCommentButton = document.createElement("button");
     addCommentButton.innerText = "Добавить рецензию";
     addCommentButton.addEventListener("click", function (event) {
@@ -65,6 +68,12 @@ function renderFilm(film) {
 
     newEl.addEventListener("click", function () {
         onFilmClick(film, newEl);
+        $(".films_cont").children(":not(#id_n)").remove();
+        /*$('.films_cont').each(function(){
+            $(this).append($('.films_block'));
+            $(this).children().not('.films_block').remove();
+        });*/
+
     });
     document.querySelector(".films_cont").appendChild(newEl);//определяем место где создастья новый блок
 }
