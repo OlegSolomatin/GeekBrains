@@ -38,7 +38,7 @@ let x = sumrate = globalrate = 0;
 class film {
     constructor ( name, cat, date, country, director, id){
         this.name = name;
-        this.rate = globalrate;
+        //this.rate = globalrate;
         this.category = categories [ cat ];
         this.date = date;
         this.country = countries [ country ];
@@ -49,16 +49,16 @@ class film {
     addComent ( authorname, rate, text) {
         this.comments.push( new comm(authorname, rate, text) );
     }
-    /*getAverageRate() {
+    getAverageRate() {
         let sumRate = 0;
         this.comments.forEach(comments => sumRate += comments.rate);
         return (this.comments.length > 0 ) ? (sumRate / this.comments.length).toFixed(1) : 0;
         //альтернатива
         //return this.comments.length > 0 ? this.comments.reduce((sum, arr) => sum + arr.stars, 0) / this.comments.length : 0;
-    }*/
+    }
 }
 class comm {
-    constructor (  authorname, rate, text ) {
+    constructor ( authorname, rate, text ) {
         this.text = text;
         this.author = nameauthor[ authorname ];
         this.rate = rate;
@@ -91,7 +91,7 @@ function commran () {
     return(com_ran);
 }
 //Подсчет глобального рейтинга фильма
-function getAverageRate (n) {
+/*function getAverageRate (n) {
     globalrate = 0;
     sumrate = 0;
     for (let i = 0; i < films[n].comments.length; i++) {
@@ -99,7 +99,7 @@ function getAverageRate (n) {
     }
     globalrate = (sumrate / films[n].comments.length) ;
     return(globalrate);
-}
+}*/
 films.push( new film("Интерстеллар",3,"2014",0,"Кристофер Нолан",258687));
 films.push( new film("Иван Васильевич меняет профессию",0,"1976",0,"Леонид Гайдай",42664));
 films.push( new film("1+1",1,"2011",3,"Оливье Накаш",535341));
@@ -147,8 +147,8 @@ function getFilmsByCategory(cat) {
 console.log(getFilmsByCategory("Драмма"));
 
 //проверка вывода через Film мтода getAverageRate
-/*console.log(films[0].getAverageRate());
-console.log(films[0].comments[0].rate);
+console.log(films[0].getAverageRate());
+/*console.log(films[0].comments[0].rate);
 console.log(films[0].comments[1].rate);
 console.log(films[0].comments[2].rate);
 console.log(films[0].comments[3].rate);*/
@@ -156,22 +156,22 @@ console.log(films[0].comments[3].rate);*/
 //самодельный вариант вывода и подсчета средней оценки фильма при отключении функции и использование
 //Метода из класса не работает. При одиночной проверке выше все отрабатывает на 100%
 //Для проверки, закоментировать вывод ниже + функцию, после раскоментировать метод в классе и вывод выше.
-for (let n = 0; n < films.length; n++) {
+/*for (let n = 0; n < films.length; n++) {
     for (let i = 0; i < films[n].comments.length; i++) {
         console.log(films[n].name + " Global rate: " + getAverageRate(n));
         console.log("Name: " + films[n].comments[i].author + ". Stars: " + films[n].comments[i].rate);
         console.log("Comment: " + films[n].comments[i].text);
         console.log("");
     }
-}
-for (let n = 0; n < films.length; n++) {
+}*/
+/*for (let n = 0; n < films.length; n++) {
     for (let i = 0; i < films[n].comments.length; i++) {
         console.log(films[n].comments);
     }
 }
-console.log(films);
+console.log(films);*/
 
-
+console.log
 
 
 

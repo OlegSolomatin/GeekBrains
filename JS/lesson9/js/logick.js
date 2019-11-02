@@ -15,13 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+function getFilmBuyname(filmName) {
+    return films.filter( f => f.name === filmName ) [0];//возвращает true если равенство верное
+}
+
 function getFilmComments(filmName) {
     const film = getFilmBuyname(filmName);
     return film.comments;
-}
-
-function getFilmBuyname(filmName) {
-    return films.filter( f => f.name === filmName ) [0];//возвращает true если равенство верное
 }
 
 function onAddCommentClick(name) {
@@ -54,7 +54,16 @@ function openFilmBloc(film, newEl) {
     comments.forEach( c => {
         tex += '<div class="bot_review"><div class="author"><div class="author_label"></div> <footer class="profile_name"> '+ c.author +' </footer> <div class="rate_author"> '+ c.rate +' </div> </div><div class="comment"> '+ c.text +' </div></div>';
     });
-    newEl.innerHTML = '<figure class="films_block"> <img class="canvas_block"> <figcaption class="film_description"> <h2>'+film.name+'</h2> <ul class="type"><li><div class="description_elem">режиссер</div> <span class="get_const">'+film.director+'</span></li> <li><div class="description_elem">год</div> <span class="get_const">'+film.date+'</span></li> <li><div class="description_elem">страна</div> <span class="get_const">'+film.country+'</span></li> <li><div class="description_elem">жанр</div> <span class="get_const">'+film.category+'</span></li></ul> </figcaption> </figure> ' +
+    newEl.innerHTML = '<figure class="films_block"> ' +
+        '<img class="canvas_block"> ' +
+        '<figcaption class="film_description"> ' +
+        '<h2>'+film.name+'</h2> ' +
+        '<ul class="type">' +
+        '<li><div class="description_elem">режиссер</div> <span class="get_const">'+film.director+'</span></li> ' +
+        '<li><div class="description_elem">год</div> <span class="get_const">'+film.date+'</span></li> ' +
+        '<li><div class="description_elem">страна</div> <span class="get_const">'+film.country+'</span></li> ' +
+        '<li><div class="description_elem">жанр</div> <span class="get_const">'+film.category+'</span></li>' +
+        '</ul> </figcaption> </figure> ' +
         '<div class="response"> '+tex+'</div>';
     const addCommentButton = document.createElement("button");
     addCommentButton.innerText = "Добавить рецензию";
@@ -72,7 +81,11 @@ function openFilmBloc(film, newEl) {
 
 function onFilmClick(film, newEl) {
     if (openFilm.hasOwnProperty( film.name ) && openFilm[film.name] === true) {
-        newEl.innerHTML = '<figure class="films_block"> <img class="canvas_block_list"> <p class="caption_films" href="#">'+film.name+'</p> <div class="rating_films">'+globalrate+'</div> </figure>';
+        newEl.innerHTML = '<figure class="films_block">' +
+            ' <img class="canvas_block_list">' +
+            ' <p class="caption_films">'+film.name+'</p> ' +
+            '<div class="rating_films">${film.getAverageRate()}</div>' +
+            ' </figure>';
         openFilm[film.name] = false;
     } else {
         openFilmBloc(film, newEl);
@@ -83,7 +96,7 @@ function onFilmClick(film, newEl) {
 function renderFilm(film) {
     const newEl = document.createElement("div");//создаен новый элемент
     newEl.classList.add("films_list");//константе в которой эелемент даем класс
-    newEl.innerHTML = '<figure class="films_block"> <img class="canvas_block_list"> <p class="caption_films" href="#">'+film.name+'</p> <div class="rating_films">'+globalrate+'</div> </figure>';
+    newEl.innerHTML = '<figure class="films_block"> <img class="canvas_block_list"> <p class="caption_films" href="#">'+film.name+'</p> <div class="rating_films">${film.getAverageRate()}</div> </figure>';
 
     newEl.addEventListener("click", function () {
         onFilmClick(film, newEl);
