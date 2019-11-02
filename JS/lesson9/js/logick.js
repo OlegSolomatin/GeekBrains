@@ -115,8 +115,8 @@ function getFilmComments(filmName) {
 }
 
 function onAddCommentClick(name) {
-    const authorValue = document.getElementsByClassName("name_user").value;
-    const commentValue = document.getElementsByClassName("comment_user").value;
+    const authorValue = document.getElementById("author"+name).value;
+    const commentValue = document.getElementById("comment"+name).value;
     const film = getFilmBuyname(name);
     film.addComments(commentValue, authorValue);
     CategoryUp(film.category);
