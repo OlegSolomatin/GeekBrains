@@ -83,9 +83,12 @@ body {
     padding: 0 0 15px 0;
 }
 .author_label {
-    width: 35px;
+    width: 40px;
     height: 40px;
     background-color: darkgrey;
+    background-image: url("../img/bg_user_avatar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-right: 25px;
 }
 .profile_name {
