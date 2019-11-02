@@ -15,44 +15,52 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-function getFilmBuyname(filmName) {
-    return films.filter( f => f.name === filmName ) [0];//возвращает true если равенство верное
+function CategoryUp(categoryname) {
+    document.querySelector(".films_cont").innerHTML = "";
+    const films = getFilmsByCategory(categoryname);
+    for (let film of films) {
+        renderFilm(film);
+    }
 }
 
-function getFilmComments(filmName) {
-    const film = getFilmBuyname(filmName);
-    return film.comments;
-}
+function renderFilm(film) {
+    const newEl = document.createElement("div");//создаен новый элемент
+    newEl.classList.add("films_list");//константе в которой эелемент даем класс
+    newEl.innerHTML = '<figure class="films_block"> ' +
+        '<img class="canvas_block_list"> ' +
+        '<p class="caption_films" href="#">'+film.name+'</p> ' +
+        '<div class="rating_films">'+globalrate+'</div> </figure>';
 
-function onAddCommentClick(name) {
-    const authorvalue = document.getElementById("author" + name).value;
-    const commentvalue = document.getElementById("comment" + name).value;
-    console.log(authorvalue, commentvalue);
-    const film = getFilmBuyname(name);
-    film.addComent(commentvalue, authorvalue);
-    CategoryUp(film.category);
-}
-
-function renderCommentForm (film){
-    const content = '<h3 class="review_user"> Добавить свою рецензию на фильм: '+film.name+'</h3> ' +
-        '<form class="form_body">' +
-        '<input class="name_user" placeholder="you name" id="author'+film.name+'">' +   /*По данному принципу можно генерировать и удалять элементы с страницы*/
-        '<input class="comment_user" placeholder="you review" id="comment'+film.name+'">' +
-        '<button type="button" class="btn btn-outline-dark send_comment" onclick="onAddCommentClick(\''+film.name+'\')">Добавить</button></form>';
-    const form = document.createElement("section");
-    form.classList.add("new_comment_user");
-    form.innerHTML = content;
-    form.addEventListener("click", function (event) {
-        event.stopPropagation();
+    newEl.addEventListener("click", function () {
+        onFilmClick(film, newEl);
+        /*$(".films_cont").children(":not(#id_n)").remove();*/
     });
-    return form;
+    document.querySelector(".films_cont").appendChild(newEl);//определяем место где создастья новый блок
+}
+
+function onFilmClick(film, newEl) {
+    if (openFilm.hasOwnProperty( film.name ) && openFilm[film.name] === true) {
+        newEl.innerHTML = '<figure class="films_block">' +
+            ' <img class="canvas_block_list">' +
+            ' <p class="caption_films">'+film.name+'</p> ' +
+            '<div class="rating_films">'+globalrate+'</div>' +
+            ' </figure>';
+        openFilm[film.name] = false;
+    } else {
+        openFilmBloc(film, newEl);
+        openFilm[film.name] = true
+    }
 }
 
 function openFilmBloc(film, newEl) {
     const comments = getFilmComments(film.name);
     let tex  = "";
     comments.forEach( c => {
-        tex += '<div class="bot_review"><div class="author"><div class="author_label"></div> <footer class="profile_name"> '+ c.author +' </footer> <div class="rate_author"> '+ c.rate +' </div> </div><div class="comment"> '+ c.text +' </div></div>';
+        tex += '<div class="bot_review"><div class="author">' +
+            '<div class="author_label"></div> ' +
+            '<footer class="profile_name"> '+ c.author +' </footer> ' +
+            '<div class="rate_author"> '+ c.rate +' </div> ' +
+            '</div><div class="comment"> '+ c.text +' </div></div>';
     });
     newEl.innerHTML = '<figure class="films_block"> ' +
         '<img class="canvas_block"> ' +
@@ -79,36 +87,46 @@ function openFilmBloc(film, newEl) {
     newEl.appendChild(addCommentButton);
 }
 
-function onFilmClick(film, newEl) {
-    if (openFilm.hasOwnProperty( film.name ) && openFilm[film.name] === true) {
-        newEl.innerHTML = '<figure class="films_block">' +
-            ' <img class="canvas_block_list">' +
-            ' <p class="caption_films">'+film.name+'</p> ' +
-            '<div class="rating_films">${film.getAverageRate()}</div>' +
-            ' </figure>';
-        openFilm[film.name] = false;
-    } else {
-        openFilmBloc(film, newEl);
-        openFilm[film.name] = true
-    }
-}
+function renderCommentForm (film){
+    const content = '<h3 class="review_user"> Добавить свою рецензию на фильм: '+film.name+'</h3> ' +
+                    '<form class="form_body">' +
+                        '<input class="name_user" placeholder="you name" id="author'+film.name+'">' +   /*По данному принципу можно генерировать и удалять элементы с страницы*/
+                        '<input class="comment_user" placeholder="you review" id="comment'+film.name+'">' +
+                        '<button class="btn btn-outline-dark send_comment" onclick="onAddCommentClick(\''+film.name+'\')">Добавить</button>' +
+                    '</form>';
+    const form = document.createElement("section");
+    form.classList.add("new_comment_user");
 
-function renderFilm(film) {
-    const newEl = document.createElement("div");//создаен новый элемент
-    newEl.classList.add("films_list");//константе в которой эелемент даем класс
-    newEl.innerHTML = '<figure class="films_block"> <img class="canvas_block_list"> <p class="caption_films" href="#">'+film.name+'</p> <div class="rating_films">${film.getAverageRate()}</div> </figure>';
-
-    newEl.addEventListener("click", function () {
-        onFilmClick(film, newEl);
-        /*$(".films_cont").children(":not(#id_n)").remove();*/
+    form.addEventListener("click", function (event) {
+        event.stopPropagation();
     });
-    document.querySelector(".films_cont").appendChild(newEl);//определяем место где создастья новый блок
+
+    form.innerHTML = content;
+    return form;
 }
 
-function CategoryUp(categoryname) {
-    document.querySelector(".films_cont").innerHTML = "";
-    const films = getFilmsByCategory(categoryname);
-    for (let film of films) {
-        renderFilm(film);
-    }
+function getFilmBuyname(filmName) {
+    return films.filter( f => f.name === filmName ) [0];//возвращает true если равенство верное
 }
+
+function getFilmComments(filmName) {
+    const film = getFilmBuyname(filmName);
+    return film.comments;
+}
+
+function onAddCommentClick(name) {
+    const authorValue = document.getElementsByClassName("name_user").value;
+    const commentValue = document.getElementsByClassName("comment_user").value;
+    const film = getFilmBuyname(name);
+    film.addComments(commentValue, authorValue);
+    CategoryUp(film.category);
+}
+
+
+
+
+
+
+
+
+

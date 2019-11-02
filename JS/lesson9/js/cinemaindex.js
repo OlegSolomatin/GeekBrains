@@ -46,7 +46,7 @@ class film {
         this.comments = [];
         this.idkino = id;
     }
-    addComent ( authorname, rate, text) {
+    addComments ( authorname, rate, text) {
         this.comments.push( new comm(authorname, rate, text) );
     }
     getAverageRate() {
@@ -111,28 +111,28 @@ films.push( new film("Карты, деньги, два ствола",0,"1998",2,
 films.push( new film("Сонная Лощина",2,"1999",0,"Тим Бёртон",5622));
 films.push( new film("Шерлок",4,"2010",2,"Пол МакГиган",502838));
 //Все имена авторов, выставленный ими рейтинг, и коментарии выбираются случайным образом.
-films[0].addComent(nameaut(), rateran(), commran());
-films[0].addComent(nameaut(), rateran(), commran());
-films[0].addComent(nameaut(), rateran(), commran());
-films[0].addComent(nameaut(), rateran(), commran());
-films[1].addComent(nameaut(), rateran(), commran());
-films[1].addComent(nameaut(), rateran(), commran());
-films[2].addComent(nameaut(), rateran(), commran());
-films[2].addComent(nameaut(), rateran(), commran());
-films[3].addComent(nameaut(), rateran(), commran());
-films[3].addComent(nameaut(), rateran(), commran());
-films[4].addComent(nameaut(), rateran(), commran());
-films[4].addComent(nameaut(), rateran(), commran());
-films[5].addComent(nameaut(), rateran(), commran());
-films[5].addComent(nameaut(), rateran(), commran());
-films[6].addComent(nameaut(), rateran(), commran());
-films[6].addComent(nameaut(), rateran(), commran());
-films[7].addComent(nameaut(), rateran(), commran());
-films[7].addComent(nameaut(), rateran(), commran());
-films[8].addComent(nameaut(), rateran(), commran());
-films[8].addComent(nameaut(), rateran(), commran());
-films[9].addComent(nameaut(), rateran(), commran());
-films[9].addComent(nameaut(), rateran(), commran());
+films[0].addComments(nameaut(), rateran(), commran());
+films[0].addComments(nameaut(), rateran(), commran());
+films[0].addComments(nameaut(), rateran(), commran());
+films[0].addComments(nameaut(), rateran(), commran());
+films[1].addComments(nameaut(), rateran(), commran());
+films[1].addComments(nameaut(), rateran(), commran());
+films[2].addComments(nameaut(), rateran(), commran());
+films[2].addComments(nameaut(), rateran(), commran());
+films[3].addComments(nameaut(), rateran(), commran());
+films[3].addComments(nameaut(), rateran(), commran());
+films[4].addComments(nameaut(), rateran(), commran());
+films[4].addComments(nameaut(), rateran(), commran());
+films[5].addComments(nameaut(), rateran(), commran());
+films[5].addComments(nameaut(), rateran(), commran());
+films[6].addComments(nameaut(), rateran(), commran());
+films[6].addComments(nameaut(), rateran(), commran());
+films[7].addComments(nameaut(), rateran(), commran());
+films[7].addComments(nameaut(), rateran(), commran());
+films[8].addComments(nameaut(), rateran(), commran());
+films[8].addComments(nameaut(), rateran(), commran());
+films[9].addComments(nameaut(), rateran(), commran());
+films[9].addComments(nameaut(), rateran(), commran());
 
 function getFilmsByCategory(cat) {
     const newFilms = [];
