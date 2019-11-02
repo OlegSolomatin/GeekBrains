@@ -48,6 +48,7 @@ body {
     color: black;
     font-size: 12px;
     background-color: #f2f2f2;
+    margin: 10px 5px;
 }
 .films_block {
     display: flex;
@@ -139,7 +140,7 @@ figure {
 }
 .comment_user {
     margin-top: 2%;
-    min-height: 50px;
+    min-height: 100px;
     max-height: 300px;
     border: none;
     border-radius: 6px;
@@ -147,7 +148,11 @@ figure {
     padding: 5px;
 }
 .but_reviews {
-    margin-left: 15px;
+    margin: 15px;
+}
+.send_comment {
+    margin-top: 5%;
+    height: 40px;
 }
 @media  screen and (min-width: 1250px) {
     .nav_none {

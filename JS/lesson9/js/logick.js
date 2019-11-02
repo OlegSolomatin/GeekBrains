@@ -16,16 +16,35 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 function getFilmComments(filmName) {
-    const film = films.filter( f => f.name === filmName ) [0];//возвращает true если равенство верное
+    const film = getFilmBuyname(filmName);
     return film.comments;
 }
 
+function getFilmBuyname(filmName) {
+    return films.filter( f => f.name === filmName ) [0];//возвращает true если равенство верное
+}
+
+function onAddCommentClick(name) {
+    const authorvalue = document.getElementById("author" + name).value;
+    const commentvalue = document.getElementById("comment" + name).value;
+    console.log(authorvalue, commentvalue);
+    const film = getFilmBuyname(name);
+    film.addComent(commentvalue, authorvalue);
+    CategoryUp(film.category);
+}
+
 function renderCommentForm (film){
-    const content = '<section class="new_comment_user"><h3 class="review_user"> Добавить свою рецензию на фильм: '+film.name+'</h3></section> <form class="form_body">' +
-    '<input class="name_user" placeholder="you name"><input class="comment_user" placeholder="you review"></form>';
-    const form = document.createElement("div");
+    const content = '<h3 class="review_user"> Добавить свою рецензию на фильм: '+film.name+'</h3> ' +
+        '<form class="form_body">' +
+        '<input class="name_user" placeholder="you name" id="author'+film.name+'">' +   /*По данному принципу можно генерировать и удалять элементы с страницы*/
+        '<input class="comment_user" placeholder="you review" id="comment'+film.name+'">' +
+        '<button type="button" class="btn btn-outline-dark send_comment" onclick="onAddCommentClick(\''+film.name+'\')">Добавить</button></form>';
+    const form = document.createElement("section");
     form.classList.add("new_comment_user");
     form.innerHTML = content;
+    form.addEventListener("click", function (event) {
+        event.stopPropagation();
+    });
     return form;
 }
 
@@ -35,18 +54,19 @@ function openFilmBloc(film, newEl) {
     comments.forEach( c => {
         tex += '<div class="bot_review"><div class="author"><div class="author_label"></div> <footer class="profile_name"> '+ c.author +' </footer> <div class="rate_author"> '+ c.rate +' </div> </div><div class="comment"> '+ c.text +' </div></div>';
     });
-    newEl.innerHTML = '<figure class="films_block">  <img class="canvas_block"> <figcaption class="film_description"> <h2>'+film.name+'</h2> <ul class="type"><li><div class="description_elem">режиссер</div> <span class="get_const">'+film.director+'</span></li> <li><div class="description_elem">год</div> <span class="get_const">'+film.date+'</span></li> <li><div class="description_elem">страна</div> <span class="get_const">'+film.country+'</span></li> <li><div class="description_elem">жанр</div> <span class="get_const">'+film.category+'</span></li></ul> </figcaption> </figure> ' +
+    newEl.innerHTML = '<figure class="films_block"> <img class="canvas_block"> <figcaption class="film_description"> <h2>'+film.name+'</h2> <ul class="type"><li><div class="description_elem">режиссер</div> <span class="get_const">'+film.director+'</span></li> <li><div class="description_elem">год</div> <span class="get_const">'+film.date+'</span></li> <li><div class="description_elem">страна</div> <span class="get_const">'+film.country+'</span></li> <li><div class="description_elem">жанр</div> <span class="get_const">'+film.category+'</span></li></ul> </figcaption> </figure> ' +
         '<div class="response"> '+tex+'</div>';
     const addCommentButton = document.createElement("button");
     addCommentButton.innerText = "Добавить рецензию";
     addCommentButton.classList.add("btn");
-    addCommentButton.classList.add("btn-outline-secondary");
+    addCommentButton.classList.add("btn-outline-dark");
     addCommentButton.classList.add("but_reviews");
     addCommentButton.addEventListener("click", function (event) {
         event.stopPropagation();
         const commentForm = renderCommentForm(film);
         newEl.appendChild(commentForm);
-    })
+        newEl.removeChild(addCommentButton);
+    });
     newEl.appendChild(addCommentButton);
 }
 
