@@ -1,0 +1,64 @@
+.container {
+    max-width: 1600px;
+    background-color: white;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.content_block {
+    border: 2px solid black;
+    padding: 0 auto 0 auto;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.header_content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 197px;
+    width: 1200px;
+}
+.logo_kontakt {
+    display: grid;
+    grid-template-columns: 420px 286px 221px 180px;
+    grid-template-rows: 51px;
+}
+.logo {
+    margin-right: 210px;
+}
+.work_time, .mail, .call {
+    display: grid;
+    grid-template-areas: ";
+}
+
+
+/*Экстрамалые девайсы («телефоны», < 576px)*/
+@media (max-width: 575.98px) {  }
+
+/*Малые девайсы («ландшафтные», < 768px)*/
+@media (max-width: 767.98px) {  }
+
+/*Средние девайсы («таблетки», < 992px)*/
+@media (max-width: 991.98px) {  }
+
+/* Большие девайсы (большие десктопы, < 1200px)*/
+@media (max-width: 1199.98px) {  }
+
