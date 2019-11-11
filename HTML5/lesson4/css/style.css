@@ -237,6 +237,8 @@
 }
 .nav_social {
     width: 1190px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -246,6 +248,8 @@
     border-top: 2px solid #c2c2c2;
 }
 .nav_head ul {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     /* Style for "Home" */
     width: 546px;
@@ -273,7 +277,11 @@
     width: 524px;
     height: 278px;
     margin: 180px 0 182px 250px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -307,6 +315,76 @@
     padding: 17px 29px 16px 27px;
     border-radius: 30px;
     text-decoration: none;
+}
+.service {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.double_bloc_serv {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+}
+.double_bloc_serv div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 77px 61px 57px 71px;
+}
+.text_service {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+.title_service {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1.82px;
+    text-align: center;
+}
+.treatment {
+    background-color: #43b1d2;
+}
+.emergency {
+    background-color: #3fb6c6;
+}
+.staff {
+    background-color: #3cbbbb;
+}
+.qualifed {
+    background-color: #37c3a8;
+}
+figure {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+figure img {
+    margin: 0 0 23px 0;
+}
+.text_service {
+    margin: 23px 0 0 0;
 }
 /*Экстрамалые девайсы («телефоны», < 576px)*/
 @media (max-width: 575.98px) {  }
