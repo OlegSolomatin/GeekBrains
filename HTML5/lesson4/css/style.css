@@ -1,3 +1,4 @@
+a { text-decoration: none}
 .container {
     max-width: 1600px;
     background-color: white;
@@ -66,12 +67,18 @@
 .icon { grid-area: icon; }
 
 .first_text {
+    color: #6a6a6a;;
+    font-family: "Open Sans Bold", sans-serif;
     grid-area: first_text;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.second_text { grid-area: second_text; }
+.second_text {
+    color: #6a6a6a;;
+    font-family: "Open Sans Bold", sans-serif;
+    grid-area: second_text;
+}
 
 .mail {
     display: grid;
@@ -251,18 +258,17 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    /* Style for "Home" */
-    width: 546px;
-    height: 21px;
-    color: #6c6c6c;
-    font-family: "Nexa Bold";
     font-size: 20px;
     font-weight: 400;
-    /* Text style for "Home" */
-    color: #262626;
 }
 .nav_head ul li {
     margin-right: 32px;
+}
+.nav_head ul li a {
+    font-family: "Montserrat Regular", sans-serif;
+    font-size: 20px;
+    color: #6c6c6c;
+    text-decoration: none;
 }
 .main_banner {
     background-image: url("../img/Main_Banner.png");
@@ -288,7 +294,7 @@
 }
 .title_banner_text {
     color: #474747;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 48px;
     font-weight: 500;
     letter-spacing: -1.19px;
@@ -296,7 +302,7 @@
 }
 .banner_text {
     color: #3f3f3f;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
@@ -307,7 +313,7 @@
     box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
     background-color: #1a9bdc;
     color: #ffffff;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
@@ -320,15 +326,20 @@
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    background: linear-gradient(45deg, #43b1d2, #37c3a8);
 }
 .double_bloc_serv {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
     flex-direction: row;
 }
 .double_bloc_serv div {
@@ -338,13 +349,15 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     align-items: center;
     padding: 77px 61px 57px 71px;
 }
 .text_service {
     color: #ffffff;
-    font-family: "Open Sans";
+    font-family: "Open Sans",sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 30px;
@@ -352,23 +365,11 @@
 }
 .title_service {
     color: #ffffff;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 30px;
     font-weight: 700;
     letter-spacing: -1.82px;
     text-align: center;
-}
-.treatment {
-    background-color: #43b1d2;
-}
-.emergency {
-    background-color: #3fb6c6;
-}
-.staff {
-    background-color: #3cbbbb;
-}
-.qualifed {
-    background-color: #37c3a8;
 }
 figure {
     display: -webkit-flex;
@@ -377,6 +378,8 @@ figure {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
     align-items: center;
 }
@@ -385,6 +388,99 @@ figure img {
 }
 .text_service {
     margin: 23px 0 0 0;
+}
+
+.why_chose_content {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 337px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+.women_doctor_img {
+    background: url(../img/women_doctor.png) no-repeat center bottom;
+    height: 598px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: end;
+}
+.our_advantages {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.lable_our_advantages {
+    padding-left: 95px;
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 30px;
+    color: #6c6c6c;
+    height: 75px;
+    line-height: 75px;
+}
+.cross-label {
+    background: url("../img/cross.png") no-repeat left center;
+}
+.pils-label {
+    background: url("../img/pils.png") no-repeat left center;
+}
+.other-label {
+    background: url("../img/research.png") no-repeat left center;
+}
+.atom-label {
+    background: url("../img/atom.png") no-repeat left center;
+}
+.text_our_advantages {
+    color: #6a6a6a;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+    margin: 20px 0 0 0;
+}
+.why_chose_head {
+    color: #494949;
+    font-family: Montserrat, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    margin: 111px 0 31px 0;
+}
+.why_chose_head_text {
+    color: #6a6a6a;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;text-align: center;
+    margin:  0 0 25px 0;
+}
+.best_fuature {
+    width: 1200px;
+    min-height: 782px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../img/Best_Feature.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.best_fuature_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 1% 12% 1%;
 }
 /*Экстрамалые девайсы («телефоны», < 576px)*/
 @media (max-width: 575.98px) {  }
