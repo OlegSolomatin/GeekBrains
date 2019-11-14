@@ -940,6 +940,7 @@ figure img {
 @media (max-width: 991.98px) {
     .logo_contact {
         grid-template-columns: repeat(2, 1fr);
+        padding: 0 25px 0 25px;
     }
     .nav_social {
         flex-direction: column;
