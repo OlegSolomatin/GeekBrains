@@ -44,6 +44,7 @@ a { text-decoration: none}
     grid-template-columns: repeat(4, 1fr);
     max-width: 1200px;
     margin: 20px 0 20px 0;
+    padding: 0 25px 0 25px;
 }
 
 .work_time1 {
@@ -210,6 +211,10 @@ a { text-decoration: none}
     padding: 17px 29px 16px 27px;
     border-radius: 30px;
     text-decoration: none;
+}
+.banner_button:hover {
+    transform: scale(1.1);
+    background-color: #00b5ff;
 }
 .service_bg {
     background: linear-gradient(45deg, #43b1d2, #37c3a8);
@@ -623,10 +628,12 @@ figure img {
 .gallery_img {
     max-width: 1200px;
     width: 100%;
-    display: block;
-    grid-template-columns: repeat(3, auto);
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
     grid-row-gap: 37px;
     grid-column-gap: 34px;
+    align-items: center;
+    justify-content: center;
 }
 .gallery_title {
     font-family: "Montserrat Bold", sans-serif;
@@ -934,13 +941,21 @@ figure img {
 
 
 /* Большие девайсы (большие десктопы, < 1200px)*/
-@media (max-width: 1199.98px) {  }
+@media (max-width: 1199.98px) {
+    .gallery_img {
+        display: grid;
+        grid-template-columns: repeat(2, min-content);
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 /*Средние девайсы («таблетки», < 992px)*/
 @media (max-width: 991.98px) {
     .logo_contact {
         grid-template-columns: repeat(2, 1fr);
-        padding: 0 25px 0 25px;
     }
     .nav_social {
         flex-direction: column;
@@ -985,6 +1000,7 @@ figure img {
     }
     .footer {
         grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
     }
     .footer_form {
         margin: 30px 0 0 0;
@@ -1002,10 +1018,21 @@ figure img {
     .quick_action_bar {
         padding: 80px 20px 80px 20px;
     }
+    .gallery_img {
+        display: grid;
+        grid-template-columns: repeat(2, min-content);
+        grid-row-gap: 20px;
+        grid-column-gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /*Малые девайсы («ландшафтные», < 768px)*/
 @media (max-width: 767.98px) {
+    .nav_head ul li {
+        margin: 0 10px 0 10px;
+    }
     .quick_action_bar {
         flex-direction: column;
     }
@@ -1030,12 +1057,28 @@ figure img {
         justify-content: center;
         align-items: center;
     }
+    .gallery_img {
+        display: grid;
+        grid-template-columns: repeat(2, min-content);
+        grid-row-gap: 10px;
+        grid-column-gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /*Экстрамалые девайсы («телефоны», < 576px)*/
 @media (max-width: 575.98px) {
     .our_team_bloc {
         grid-template-columns: repeat(1, auto);
+    }
+    .gallery_img {
+        display: grid;
+        grid-template-columns: repeat(1, min-content);
+        grid-row-gap: 10px;
+        grid-column-gap: 15px;
+        align-items: center;
+        justify-content: center;
     }
 }
 
