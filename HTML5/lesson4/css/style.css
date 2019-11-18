@@ -1256,5 +1256,8 @@ figure img {
     .footer_bg {
         padding: 20px 0 0 0;
     }
+    .work_time1 {
+        grid-template-columns: auto;
+    }
 }
 
