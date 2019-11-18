@@ -21,7 +21,7 @@
   <component name="ProjectId" id="1S0k87MTUDMU77Z1rrpGvkGTytm" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JSGB/lesson1/index.js" />
+    <property name="last_opened_file_path" value="D:/JSGB/lesson1/index.js" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570707739070</updated>
       <workItem from="1570707741299" duration="118000" />
+      <workItem from="1574053561542" duration="8000" />
     </task>
     <servers />
   </component>
@@ -57,7 +58,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
