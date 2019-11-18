@@ -211,7 +211,45 @@ a { text-decoration: none}
     padding: 17px 29px 16px 27px;
     border-radius: 30px;
     text-decoration: none;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 10000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 10000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 10000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
 .banner_button:hover {
     transform: scale(1.1);
     background-color: #00b5ff;
@@ -635,6 +673,36 @@ figure img {
     align-items: center;
     justify-content: center;
 }
+.rotate_block_img {
+    position: relative;
+    width: 344px;
+    height: 209px;
+}
+.rotate_img, .rotate_text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2.5s;
+    backface-visibility: hidden;
+    background-color: #fff;
+    outline: none;
+    border: none;
+}
+.rotate_text {
+    transform: rotateY(180deg);
+}
+.rotate_block_img:hover .rotate_img {
+    transform: rotateY(180deg);}
+.rotate_block_img:hover .rotate_text {
+    transform: rotateY(360deg);}
+.rotate_text {
+    background: linear-gradient(45deg, #43b1d2, #37c3a8);
+}
 .gallery_title {
     font-family: "Montserrat Bold", sans-serif;
     color: #ffffff;
@@ -694,12 +762,33 @@ figure img {
     height: 230px;
 }
 .team_member_name {
-    color: #6f6f6e;
     font-family: "Montserrat Bold", sans-serif;
     font-size: 25px;
     font-weight: 500;
     margin: 29px 0 15px 0;
+    text-align: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s linear infinite;
 }
+    @keyframes shine {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
 .team_member_position {
     color: #6f6f6e;
     font-family: "Montserrat Bold", sans-serif;
@@ -736,6 +825,38 @@ figure img {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.hidden_img_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    transform: scale(1);
+    .gradient_but {
+        display: none;
+        background: linear-gradient(70deg,#0ebeff,#ffdd40,#ae63e4,#47cf73);
+        padding: 15px;
+    }
+}
+
+.gradient_but {
+    transform: scale(0);
+}
+.hidden_img img:hover {
+    transform: translateY(-200px) scale(0);
+    transition: 5s;
+}
+.hidden_img:hover {
+    transform: scale(1);
+    transition: 3s;
+    background: ;
+}
+.gradient_but:hover {
+    transform: scale(1);
+    transition: 3s;
+}
+
 .quick_action_bar_bg {
     background-color: #e2e2e2;
 }
@@ -939,6 +1060,10 @@ figure img {
     letter-spacing: 0.33px;
 }
 
+.doctor_pacient_image:hover {
+    transform: rotate(180deg);
+    transition: 3s;
+}
 
 /* Большие девайсы (большие десктопы, < 1200px)*/
 @media (max-width: 1199.98px) {
@@ -1079,6 +1204,16 @@ figure img {
         grid-column-gap: 15px;
         align-items: center;
         justify-content: center;
+    }
+    .but_home {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transform: scale(3);
+    }
+
+    .but_home.hidden {
+        display: none;
     }
 }
 
