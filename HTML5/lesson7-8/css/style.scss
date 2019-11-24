@@ -1,0 +1,242 @@
+//font
+$color-green: #81b300;
+$color-white: #ffffff;
+$color-black: #000000;
+
+@mixin font_body {
+  font-family: Georgia, sans-serif;
+  font-weight: 400;
+}
+
+@mixin row-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #a7adba;
+  width: 100%;
+  height: auto;
+
+  header {
+    width: 100%;
+    max-width: 960px;
+    min-width: 300px;
+    height: auto;
+    border-top: 5px solid $color-green;
+    margin: 0 auto;
+    background-color: $color-white;
+
+    nav {
+      float: right;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 251px;
+      height: 50px;
+      background-color: $color-green;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      margin: 0 30px 0 0;
+
+      a {
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        background-color: black;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+
+        i {
+          font-size: 16px;
+          line-height: 32px;
+          color: #ffffff;
+        }
+      }
+    }
+
+    h1 {
+      /* Style for "CONCOMITAN" */
+      margin: 30px 0 0 30px;
+      color: #333333;
+      font-size: 36px;
+      @include font_body;
+      text-transform: uppercase;
+      span {
+        font-size: 48px;
+      }
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 0 30px;
+
+      h5 {
+        @include font_body;
+        font-size: 12px;
+        color: #999999;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        height: 18px;
+        @include font_body;
+        font-size: 12px;
+
+        li {
+          color: $color-green;
+
+          a{
+            color: $color-green;
+          }
+        }
+        li:nth-child(even) {
+          padding: 0 5px 0 5px;
+          border-left: 1px solid $color-green;
+          border-right: 1px solid $color-green;
+        }
+        li:nth-child(odd) {
+          padding: 0 5px 0 5px;
+        }
+      }
+    }
+
+    section {
+      /* Style for "BG Colour" */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      background-color: $color-green;
+
+      ul {
+        @include row-ul;
+        margin: 0 0 0 30px;
+        width: 55%;
+
+        li {
+          /* Style for "STYLE DEMO" */
+          color: $color-white;
+          font-size: 13px;
+          @include font_body;
+          text-transform: uppercase;
+        }
+      }
+      form {
+        margin: 0 30px 0 0;
+        width: 282px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: $color-white;
+
+        input {
+          /* Style for "BG Colour" */
+          background-color: transparent;
+          padding: 8px 10px 13px 10px;
+          height: 30px;
+          border: none;
+          width: 100%;
+          border-right: 1px solid #7f7f7f;
+        }
+        input::placeholder {
+          /* Style for "Search Our" */
+          color: #7f7f7f;
+          font-size: 12px;
+          @include font_body;
+        }
+        button {
+          /* Style for "SEARCH" */
+          width: 65px;
+          background-color: transparent;
+          color: $color-green;
+          @include font_body;
+          font-size: 12px;
+          border: none;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  main {
+    width: 100%;
+    max-width: 960px;
+    min-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+  footer {
+    width: 100%;
+    max-width: 960px;
+    min-width: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+.linkedin:hover{
+  background-color: #2867B2;
+}
+.twitter:hover {
+  background-color: #00acee;
+}
+.printerest:hover {
+  background-color: #BD081C;
+}
+.google:hover {
+  background-image: linear-gradient(to right, #4285f4 1%,#db4437 20%,#db4437 20%,#f4b400 40%,#2989d8 60%,#2989d8 60%,#0f9d58 80%,#db4437 100%);
+}
+.rss:hover {
+  background-color: #ff7f00;
+}
+.menu_search ul li a:hover {
+  color: $color-black;
+  text-decoration: none;
+}
+// Экстрамалые девайсы («телефоны», < 576px)
+// Нет @media, т.к. это по умолчанию в Bootstrap
+
+// Малые девайсы («ландшафтные телефоны», >= 576px)
+/*@media (min-width: 576px) { ... }
+
+// Средние девайсы («таблетки», >= 768px)
+@media (min-width: 768px) { ... }
+
+// Большие девайсы (десктопы, >= 992px)
+@media (min-width: 992px) {
+  .container {
+
+    header {
+
+      section {
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        ul{
+          width: 100%;
+          margin: 0;
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
+}
+
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px) { ... }*/
