@@ -380,8 +380,18 @@ a {
     color: #737373;
     font-size: 12px;
     font-family: Georgia, sans-serif;
-    font-weight: 400; }
-
+    font-weight: 400;
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #23a6d5, #e73c7e, #ee7752);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: grad 4s linear infinite; }
+@keyframes grad {
+  to {
+    background-position: 200% center; } }
 .linkedin:hover {
   background-color: #2867B2; }
 
