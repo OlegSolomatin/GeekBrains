@@ -150,17 +150,15 @@ a {
     align-items: center; }
     .container main .carousel_main {
       max-width: 900px;
-      width: 100%; }
+      width: 100%;
+      border: 10px solid #ffffff;
+      margin: 30px 0 30px 0; }
   .container footer {
     width: 100%;
     max-width: 960px;
     min-width: 300px;
     height: auto;
     margin: 0 auto; }
-
-.carousel_main {
-  border: 10px solid #ffffff;
-  margin: 30px 0 30px 0; }
 
 .service_container {
   width: 100%;
@@ -173,22 +171,23 @@ a {
     border-bottom: 2px solid #7f7f7f;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     padding: 50px 0 50px 0; }
     .service_container .service .service_block {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
-      width: auto; }
+      width: 50%; }
       .service_container .service .service_block figure {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         text-align: center;
         max-width: 203px;
         width: 100%; }
+        .service_container .service .service_block figure img {
+          width: min-content;
+          margin: 0 auto; }
         .service_container .service .service_block figure h3 {
           /* Style for "Vivamuslib" */
           font-family: Georgia, sans-serif;
@@ -202,10 +201,186 @@ a {
           font-size: 13px;
           font-family: Georgia, sans-serif;
           font-weight: 400; }
-      .service_container .service .service_block figure:nth-child(even) {
-        margin-left: 27px; }
-    .service_container .service .service_block:nth-child(odd) {
-      margin: 0 27px 0 0; }
+
+.latest_work_container {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center; }
+  .latest_work_container .latest_work {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 0 50px 0; }
+    .latest_work_container .latest_work .latest_work_block {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 50%; }
+      .latest_work_container .latest_work .latest_work_block figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 200px;
+        width: 100%; }
+        .latest_work_container .latest_work .latest_work_block figure img {
+          border: 5px solid #81b300;
+          outline: 1px solid #7f7f7f; }
+        .latest_work_container .latest_work .latest_work_block figure h3 {
+          /* Style for "Project Ti" */
+          margin: 15px 0 15px 0;
+          color: #444444;
+          font-size: 14px;
+          font-family: Georgia, sans-serif;
+          font-weight: 400;
+          text-align: left; }
+        .latest_work_container .latest_work .latest_work_block figure figcaption {
+          /* Style for "Portortorn" */
+          color: #878787;
+          font-size: 13px;
+          font-family: Georgia, sans-serif;
+          font-weight: 400;
+          text-align: justify; }
+        .latest_work_container .latest_work .latest_work_block figure a {
+          /* Style for "View Detai" */
+          color: #81b300;
+          font-family: Georgia, sans-serif;
+          font-weight: 400;
+          font-size: 13px;
+          text-align: right;
+          margin: 15px 0 0 0; }
+
+.footer_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .footer_content .footer {
+    width: 100%;
+    background-color: #3a3a3a;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center; }
+    .footer_content .footer .footer_container {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start; }
+      .footer_content .footer .footer_container .contact_link_blog_newslatter {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start; }
+        .footer_content .footer .footer_container .contact_link_blog_newslatter section {
+          width: 210px;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .footer_content .footer .footer_container .contact_link_blog_newslatter section h3 {
+            /* Style for "CONTACT DE" */
+            color: #666666;
+            font-family: Georgia, sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            text-transform: uppercase; }
+          .footer_content .footer .footer_container .contact_link_blog_newslatter section span {
+            /* Style for "Convallisi" */
+            font-family: Georgia, sans-serif;
+            font-weight: 400;
+            color: #999999;
+            font-size: 13px;
+            text-align: justify;
+            margin: 30px 0 15px 0; }
+          .footer_content .footer .footer_container .contact_link_blog_newslatter section a {
+            /* Style for "Link Text" */
+            color: #999999;
+            font-family: Georgia, sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            margin: 1px 0; }
+          .footer_content .footer .footer_container .contact_link_blog_newslatter section .read_more {
+            /* Style for "Read more" */
+            color: #81b300;
+            font-family: Georgia, sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            text-align: right;
+            margin: 0; }
+  .footer_content .copyright {
+    width: 100%;
+    background-color: #2e2e2e;
+    padding: 20px 0; }
+
+.link h3 {
+  margin: 0 0 30px 0; }
+.link a {
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #484848; }
+
+.blog aside h4 {
+  /* Style for "Blog Post" */
+  margin: 30px 0 5px 0;
+  color: #999999;
+  font-family: Georgia;
+  font-size: 13px;
+  font-weight: bold; }
+.blog aside p, .blog aside span {
+  /* Style for "Posted by" */
+  font-family: Georgia, sans-serif;
+  font-weight: 400;
+  color: #999999;
+  font-size: 11px;
+  margin: 0; }
+
+.newslatter form {
+  margin: 30px 0 0 0; }
+  .newslatter form input {
+    /* Style for "Path" */
+    width: 210px;
+    height: 31px;
+    background-color: #1f1f1f;
+    color: #999999;
+    border: none;
+    border-radius: 7px;
+    padding: 8px 10px 13px 10px; }
+  .newslatter form input::placeholder {
+    /* Style for "Search Our" */
+    font-size: 12px;
+    font-family: Georgia, sans-serif;
+    font-weight: 400; }
+  .newslatter form button {
+    /* Style for "Path" */
+    width: 80px;
+    height: 31px;
+    background-color: #1f1f1f;
+    border-radius: 7px;
+    border: none;
+    color: #81b300;
+    text-transform: uppercase;
+    font-family: Georgia, sans-serif;
+    font-weight: 400; }
+  .newslatter form button:hover {
+    background: #ffffff;
+    color: black;
+    transition: 3s; }
+
+.copyright_content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto; }
+  .copyright_content span {
+    /* Style for "Copyright" */
+    color: #737373;
+    font-size: 12px;
+    font-family: Georgia, sans-serif;
+    font-weight: 400; }
 
 .linkedin:hover {
   background-color: #2867B2; }
