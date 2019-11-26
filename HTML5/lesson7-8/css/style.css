@@ -58,32 +58,32 @@ a {
       text-transform: uppercase; }
       .container header h1 span {
         font-size: 48px; }
-    .container header div {
+    .container header .sub-title_nav {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       margin: 0 30px; }
-      .container header div h5 {
+      .container header .sub-title_nav h5 {
         font-family: Georgia, sans-serif;
         font-weight: 400;
         font-size: 12px;
         color: #999999; }
-      .container header div ul {
+      .container header .sub-title_nav ul {
         display: flex;
         flex-direction: row;
         height: 18px;
         font-family: Georgia, sans-serif;
         font-weight: 400;
         font-size: 12px; }
-        .container header div ul li {
+        .container header .sub-title_nav ul li {
           color: #81b300; }
-          .container header div ul li a {
+          .container header .sub-title_nav ul li a {
             color: #81b300; }
-        .container header div ul li:nth-child(even) {
+        .container header .sub-title_nav ul li:nth-child(even) {
           padding: 0 5px 0 5px;
           border-left: 1px solid #81b300;
           border-right: 1px solid #81b300; }
-        .container header div ul li:nth-child(odd) {
+        .container header .sub-title_nav ul li:nth-child(odd) {
           padding: 0 5px 0 5px; }
     .container header section {
       /* Style for "BG Colour" */
@@ -91,14 +91,15 @@ a {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      height: 70px;
+      height: auto;
       width: 100%;
-      background-color: #81b300; }
+      background-color: #81b300;
+      padding: 20px 0 20px 30px; }
       .container header section ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 0 0 0 30px;
+        margin: 0;
         width: 55%; }
         .container header section ul li {
           /* Style for "STYLE DEMO" */
@@ -367,7 +368,6 @@ a {
     font-weight: 400; }
   .newslatter form button:hover {
     background: #ffffff;
-    color: black;
     transition: 3s; }
 
 .copyright_content {
