@@ -318,6 +318,7 @@ a {
         img {
           border: 5px solid $color-green;
           outline: 1px solid #7f7f7f;
+          height: 140px;
         }
 
         h3 {
@@ -415,7 +416,6 @@ a {
     background-color: $color-copy-bg;
     padding: 20px 0;
   }
-
 }
 
 .link {
@@ -518,24 +518,29 @@ a {
 
 .linkedin:hover{
   background-color: #2867B2;
+  transition: 1.5s;
 }
 .twitter:hover {
   background-color: #00acee;
+  transition: 1.5s;
 }
 .printerest:hover {
   background-color: #BD081C;
+  transition: 1.5s;
 }
 .google:hover {
-  background-image: linear-gradient(to right, #4285f4 1%,#db4437 20%,#db4437 20%,#f4b400 40%,#2989d8 60%,#2989d8 60%,#0f9d58 80%,#db4437 100%);
+  background-color: #BD081C;
+  transition: 1.5s;
 }
 .rss:hover {
   background-color: #ff7f00;
+  transition: 1.5s;
 }
 .menu_search ul li a:hover {
   color: $color-black;
   text-decoration: none;
+  transition: 1s;
 }
-
 /*@media screen and (min-width: 1200px) { ... }*/
 
 // Большие девайсы (десктопы, >= 992px)

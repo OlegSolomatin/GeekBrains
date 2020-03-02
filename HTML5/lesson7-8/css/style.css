@@ -229,7 +229,8 @@ a {
         width: 100%; }
         .latest_work_container .latest_work .latest_work_block figure img {
           border: 5px solid #81b300;
-          outline: 1px solid #7f7f7f; }
+          outline: 1px solid #7f7f7f;
+          height: 140px; }
         .latest_work_container .latest_work .latest_work_block figure h3 {
           /* Style for "Project Ti" */
           margin: 15px 0 15px 0;
@@ -393,23 +394,29 @@ a {
   to {
     background-position: 200% center; } }
 .linkedin:hover {
-  background-color: #2867B2; }
+  background-color: #2867B2;
+  transition: 1.5s; }
 
 .twitter:hover {
-  background-color: #00acee; }
+  background-color: #00acee;
+  transition: 1.5s; }
 
 .printerest:hover {
-  background-color: #BD081C; }
+  background-color: #BD081C;
+  transition: 1.5s; }
 
 .google:hover {
-  background-image: linear-gradient(to right, #4285f4 1%, #db4437 20%, #db4437 20%, #f4b400 40%, #2989d8 60%, #2989d8 60%, #0f9d58 80%, #db4437 100%); }
+  background-color: #BD081C;
+  transition: 1.5s; }
 
 .rss:hover {
-  background-color: #ff7f00; }
+  background-color: #ff7f00;
+  transition: 1.5s; }
 
 .menu_search ul li a:hover {
   color: #000000;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: 1s; }
 
 /*@media screen and (min-width: 1200px) { ... }*/
 /*@media screen and (min-width: 992px) { ... }*/
