@@ -26,6 +26,12 @@ $color-copy-bg: #2e2e2e;
   justify-content: center;
 }
 
+@mixin flex-column-align_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @mixin display-flex-center-row {
   display: flex;
   flex-direction: row;
@@ -38,6 +44,12 @@ $color-copy-bg: #2e2e2e;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
+}
+
+@mixin flex-column-space_arr {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 body {
@@ -57,6 +69,7 @@ a {
   max-width: 960px;
   height: auto;
   padding: 0 0 0 0;
+  margin: 0 auto;
 
   header {
     width: 100%;
@@ -111,7 +124,7 @@ a {
       }
     }
 
-    div {
+    .sub-title_nav {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -154,12 +167,14 @@ a {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      height: 70px;
+      height: auto;
+      width: 100%;
       background-color: $color-green;
+      padding: 20px 0 20px 30px;
 
       ul {
         @include row-ul;
-        margin: 0 0 0 30px;
+        margin: 0;
         width: 55%;
 
         li {
@@ -303,6 +318,7 @@ a {
         img {
           border: 5px solid $color-green;
           outline: 1px solid #7f7f7f;
+          height: 140px;
         }
 
         h3 {
@@ -400,7 +416,6 @@ a {
     background-color: $color-copy-bg;
     padding: 20px 0;
   }
-
 }
 
 .link {
@@ -466,7 +481,6 @@ a {
     }
     button:hover {
       background: $color-white;
-      color: black;
       transition: 3s;
     }
   }
@@ -489,7 +503,6 @@ a {
     background-size: 200% auto;
 
     color: #000;
-    background-clip: text;
     text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -505,51 +518,150 @@ a {
 
 .linkedin:hover{
   background-color: #2867B2;
+  transition: 1.5s;
 }
 .twitter:hover {
   background-color: #00acee;
+  transition: 1.5s;
 }
 .printerest:hover {
   background-color: #BD081C;
+  transition: 1.5s;
 }
 .google:hover {
-  background-image: linear-gradient(to right, #4285f4 1%,#db4437 20%,#db4437 20%,#f4b400 40%,#2989d8 60%,#2989d8 60%,#0f9d58 80%,#db4437 100%);
+  background-color: #BD081C;
+  transition: 1.5s;
 }
 .rss:hover {
   background-color: #ff7f00;
+  transition: 1.5s;
 }
 .menu_search ul li a:hover {
   color: $color-black;
   text-decoration: none;
+  transition: 1s;
 }
-// Экстрамалые девайсы («телефоны», < 576px)
-// Нет @media, т.к. это по умолчанию в Bootstrap
-
-// Малые девайсы («ландшафтные телефоны», >= 576px)
-/*@media (min-width: 576px) { ... }
-
-// Средние девайсы («таблетки», >= 768px)
-@media (min-width: 768px) { ... }
+/*@media screen and (min-width: 1200px) { ... }*/
 
 // Большие девайсы (десктопы, >= 992px)
-@media (min-width: 992px) {
+/*@media screen and (min-width: 992px) { ... }*/
+
+// Средние девайсы («таблетки», >= 768px)
+@media screen and (max-width: 768px) {
+
   .container {
 
     header {
-
       section {
-        flex-direction: column;
-        justify-content: space-evenly;
+        @include flex-column-space_arr;
 
-        ul{
+        ul {
           width: 100%;
+          @include flex-row-space-start;
           margin: 0;
-          justify-content: space-evenly;
+        }
+      }
+    }
+    main {
+      .service_container {
+        .service {
+          @include flex-column-align_center;
+
+          .service_block {
+            width: 100%;
+          }
+        }
+      }
+      .latest_work_container {
+        .latest_work {
+          @include flex-column-align_center;
+
+          .latest_work_block {
+            width: 100%;
+          }
+        }
+      }
+    }
+    footer {
+      .footer {
+        .footer_container {
+          @include flex-column-align_center;
+
+          .contact_link_blog_newslatter {
+            width: 100%;
+          }
+        }
+      }
+      .copyright {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+// Малые девайсы («ландшафтные телефоны», >= 576px)
+@media screen and (max-width: 576px) {
+
+  .container {
+
+    header {
+      @include flex-column-align_center;
+
+      nav {
+        margin: 0;
+      }
+      h1 {
+        margin: 10px 0;
+      }
+      .sub-title_nav {
+        @include flex-column-align_center;
+      }
+      .menu_search {
+        height: auto;
+        padding: 5px 0;
+
+        ul {
+          @include flex-column-align_center;
+        }
+      }
+    }
+    main {
+      section {
+        .service {
+          .service_block {
+            @include flex-column-space_arr;
+          }
+        }
+        .latest_work {
+          .latest_work_block {
+            @include flex-column-space_arr;
+          }
+        }
+      }
+    }
+    footer {
+      .footer {
+        .footer_container {
+          .contact_link_blog_newslatter {
+            @include flex-column-align_center;
+
+            section {
+              margin: 10px 0;
+            }
+          }
+        }
+      }
+      .copyright {
+        .copyright_content {
+          @include flex-column-align_center;
         }
       }
     }
   }
 }
 
-// Экстрабольшие девайсы (большие десктопы, >= 1200px)
-@media (min-width: 1200px) { ... }*/
+
+
+
+
+
